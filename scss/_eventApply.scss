@@ -1,0 +1,373 @@
+//優惠選擇列
+.eventApplyType {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    position: fixed;
+    top: 45px;
+    left: 0px;
+    z-index: 10;
+    background: $mainBG_2;
+
+    ul {
+        display: flex;
+
+        li {
+            width: 34%;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border-bottom: solid 2px transparent;
+            font-size: 3.4vw;
+            font-weight: bold;
+            color: $choose_Word;
+
+            &:active,&.active {
+                border-color: $choose_Border;
+                color: $choose_ActiveWord;
+            }
+        }
+    }
+}
+
+//優惠列表
+.applyList {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 132px);
+    background: $mainBG_3;
+    overflow-y: scroll;
+    margin-top: 40px;
+
+    &.display {
+        display: block;
+    }
+
+    .listBox {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px 4% 0;
+
+        .list {
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 13px 2px $boxshadow_1;
+            border: solid 1px $mainBorder_1;
+            background: $mainBG_2;
+
+            .title {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: solid 1px $mainBorder_2;
+                color: $title_1;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .tips {
+                display: none;
+                width: 56vw;
+                border-radius: 5px;
+                margin: 6px auto 0;
+                background: $tip_BG;
+                box-sizing: border-box;
+                padding: 7px 0;
+                text-align: center;
+                color: $tip_Word;
+                font-weight: bold;
+                font-size: 3vw;
+                position: relative;
+
+                &.display {
+                    display: block;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -6px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 4px 6px 4px;
+                    border-color: $tip_BG transparent;
+                }
+
+                em {
+                    color: $tip_Sp;
+                    margin-right: 5px;
+                }
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
+                    padding: 6px 13px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $title_2;
+                    align-items: center;
+
+                    &.cur {
+                        background: $currentBG;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        color: $mainWord_1;
+
+                        em {
+                            color: $remind;
+
+                            &.sp {
+                                color: $remind_Sp;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 15px 12px;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    width: calc((100% - 10px) / 2);
+                    height: 32px;
+
+                    &.applyBtn {
+                        @include mainBtn;
+                        font-size: 16px;
+                    }
+
+                    &.checkBtn {
+                        @include noBgBtn_Normal;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//優惠申請紀錄
+.applyRecord {
+    width: 100%;
+    height: calc(100vh - 132px);
+    background: $mainBG_3;
+    overflow-y: auto;
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    display: none;
+
+    &.display {
+        display: block;
+    }
+
+    .searchContain {
+        width: 100%;
+        height: auto;
+        background: $mainBG_2;
+        padding: 15px;
+        box-sizing: border-box;
+        
+        form {
+            width: 100%;
+            height: auto;
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $title_2;
+                        margin-bottom: 10px;
+                    }
+
+                    select {
+                        width: 100%;
+                        height: 42px;
+                        @include mainSelect;
+                    }
+
+                    .inputBox {
+                        width: 100%;
+                        height: 42px;
+                        border-radius: 5px;
+                        border: solid 1px $mainBorder_1;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: $mainWord_1;
+
+                        input {
+                            border: none;
+                            background: none;
+                            width: auto;
+                            height: 100%;
+                            color: $mainWord_1;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .btnBox {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+
+                        button {
+                            width: 25%;
+                            height: 38px;
+                            @include changeBtn;
+
+                            &:nth-of-type(1) {
+                                border-radius: 5px 0 0 5px;
+                            }
+                        
+                            &:last-child {
+                                border-radius: 0 5px 5px 0;
+                            }
+                        }
+                    }
+
+                    &.bigBtn {
+                        margin: 0;
+
+                        button {
+                            width: 100%;
+                            height: 42px;
+                            @include mainBtn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .reviewBody {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px 4% 0;
+
+        .noData {
+            display: none;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 80px;
+            color: $title_3;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+
+            &.display {
+                display: block;
+            }
+        }
+
+        .recordBox {
+            display: none;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            background: $mainBG_2;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 $boxshadow_2;
+
+            &.display {
+                display: block;
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                .title {
+                    width: 100%;
+                    height: 38px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+                    border-bottom: solid 2px $mainBorder_2;
+
+                    p {
+                        color: $title_1;
+                        font-weight: bold;
+                        font-size: 14px;
+
+                        span {
+                            color: $title_2;
+
+                            &.status {
+                                color: $mainWord_1;
+                            }
+                        }
+                    }
+                }
+
+                ul {
+                    box-sizing: border-box;
+                    padding: 2.67vw 4vw;
+
+                    li {
+                        width: 100%;
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: $title_2;
+
+                            &:last-child {
+                                color: $mainWord_1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
