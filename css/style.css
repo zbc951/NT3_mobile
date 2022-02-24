@@ -3551,13 +3551,13 @@ html body .helpInner ul li .textBox p {
   line-height: 22px;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
+  color: #4d4d4d;
   margin-bottom: 8px;
 }
 html body .helpInner ul li .textBox p.smallTitle {
   font-size: 22px;
   margin: 20px 0 10px;
-  color: #4d4d4d;
+  color: #171717;
   text-align: center;
 }
 html body .helpInner ul li .textBox p.smallTitle.first {
@@ -3565,7 +3565,7 @@ html body .helpInner ul li .textBox p.smallTitle.first {
 }
 html body .helpInner ul li .textBox p.platform {
   font-size: 18px;
-  color: #4d4d4d;
+  color: #171717;
   margin: 15px 0;
   text-align: center;
 }

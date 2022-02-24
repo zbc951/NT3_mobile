@@ -191,13 +191,13 @@
                     line-height: 22px;
                     font-size: 14px;
                     font-weight: bold;
-                    color: $mainWord_1;
+                    color: $help_Word;
                     margin-bottom: 8px;
 
                     &.smallTitle {
                         font-size: 22px;
                         margin: 20px 0 10px;
-                        color: $title_2;
+                        color: $help_Title;
                         text-align: center;
 
                         &.first {
@@ -207,7 +207,7 @@
 
                     &.platform {
                         font-size: 18px;
-                        color: $title_2;
+                        color: $help_Title;
                         margin: 15px 0;
                         text-align: center;
 

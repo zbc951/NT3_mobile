@@ -289,7 +289,10 @@ $mailCnt_TopBG: #e0c38d;
     }
 }
 
-//help_客服
+//help
+$help_Title: #171717;
+$help_Word: #4d4d4d;
+//客服按鈕
 @mixin help_lineBtn {
     background: #ffffff;
     border: solid 1px #00b900;
