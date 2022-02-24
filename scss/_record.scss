@@ -2,9 +2,8 @@
 .bettingWrap {
     width: 100%;
     height: calc(100vh - 95px);
-    background: $mainBG_3;
+    background: $mainBG_2;
     overflow-y: auto;
-    padding-top: 10px;
     box-sizing: border-box;
 
     .searchContent {
@@ -12,7 +11,7 @@
         height: auto;
         box-sizing: border-box;
         padding: 13px 14px;
-        background: $mainBG_2;
+        background: $mainBG_1;
         margin-bottom: 10px;
 
         .top {
@@ -53,7 +52,7 @@
                 .inputBox {
                     width: 100%;
                     height: 42px;
-                    border: solid 1px $mainBorder_1;
+                    border: solid 1px $mainBorder_2;
                     border-radius: 3px;
                     display: flex;
                     align-items: center;
@@ -141,8 +140,8 @@
             width: 100%;
             height: auto;
             border-radius: 5px;
-            border: solid 1px $mainBorder_1;
-            background: $mainBG_2;
+            border: solid 1px $mainBorder_2;
+            background: $mainBG_1;
             margin-bottom: 10px;
 
             &.display {
@@ -152,7 +151,7 @@
             .title {
                 width: 100%;
                 height: 38px;
-                border-bottom: solid 1px $mainBorder_2;
+                border-bottom: solid 1px $mainBorder_1;
                 color: $title_1;
                 font-size: 14px;
                 font-weight: bold;
@@ -165,6 +164,12 @@
                 .date {
                     font-size: 13px;
                     color: $title_Time;
+                }
+
+                button {
+                    width: 80px;
+                    height: 26px;
+                    @include noBgBtn_Normal;
                 }
             }
 
@@ -214,7 +219,7 @@
 .recordTop {
     width: 100%;
     height: auto;
-    background: $mainBG_2;
+    background: $mainBG_1;
     margin-bottom: 10px;
 
     ul {
@@ -272,8 +277,8 @@
             width: 100%;
             height: auto;
             border-radius: 5px;
-            background: $mainBG_2;
-            border: solid 1px $mainBorder_1;
+            background: $mainBG_1;
+            border: solid 1px $mainBorder_2;
             margin-bottom: 10px;
 
             p {
@@ -289,7 +294,7 @@
 
                 &.title {
                     color: $title_1;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $mainBorder_1;
                 }
 
                 span {
@@ -313,7 +318,7 @@
             .remindBox {
                 width: calc(100% - 28px);
                 height: 42px;
-                @include security;
+                @include wordBox;
                 margin: 0 auto;
             }
 

@@ -13,10 +13,10 @@ header {
         align-items: center;
         width: 100%;
         height: 45px;
-        background: $mainBG_1;
         padding: 0 14px;
         box-sizing: border-box;
         position: relative;
+        overflow: hidden;
 
         .title {
             width: 70%;
@@ -58,7 +58,7 @@ header {
             top: 50%;
             transform: translateY(-50%);
             right: 14px;
-            @include noBgBtn;
+            @include headerBtn;
 
             &.edit {
                 display: none;

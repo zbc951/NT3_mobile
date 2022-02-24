@@ -3,29 +3,30 @@
     width: 100%;
     min-height: calc(100vh - 92px);
     height: auto;
-    background: $mainBG_3;
+    background: $mainBG_2;
     padding-bottom: 10px;
 
     //上半
     .walletBox {
         width: 100%;
         height: auto;
-        padding-bottom: 15px;
+        padding-bottom: 30px;
         margin-bottom: 10px;
-        background: $mainBG_2;
+        background: $mainBG_1;
+        padding-top: 25px;
 
         //漸層
         .gradient {
-            background: $wallet_BG;
             width: 100%;
             height: auto;
 
             .content {
                 width: 92vw;
                 height: auto;
-                margin: 0 auto 16px;
-                background: $mainBG_2;
-                border-radius: 1.5vw;
+                margin: 0 auto 30px;
+                background: $mainBG_1;
+                border: solid 1px $mainBorder_2;
+                border-radius: 5px;
                 box-shadow: 0 10px 12px -2px $boxshadow_2;
 
                 .amount {
@@ -44,7 +45,7 @@
                             display: flex;
                             align-items: center;
                             margin-bottom: 10px;
-                            color: $title_2;
+                            color: $title_1;
                             font-size: 15px;
                             font-weight: bold;
                             letter-spacing: 2px;
@@ -76,7 +77,7 @@
                     width: 100%;
                     height: auto;
                     display: flex;
-                    border-bottom: solid 1px $mainBorder_1;
+                    // border-bottom: solid 1px $mainBorder_1;
                     
                     .items {
                         display: flex;
@@ -184,7 +185,8 @@
     .walletList {
         width: 100%;
         height: auto;
-        background: $mainBG_2;
+        background: $mainBG_1;
+        margin-bottom: 17px;
 
         // .forActive,
         // .forHistory {
@@ -346,12 +348,12 @@
                 }
 
                 li {
-                    width: 30.66vw;
+                    width: 29.66vw;
                     min-height: 16.53vw;
                     box-sizing: border-box;
                     padding: 10px 0 0 11px;
-                    margin: 0 0.26vw 0.26vw 0;
-                    border: solid 1px $mainBorder_1;
+                    margin: 0 1.9vw 1.9vw 0;
+                    border: solid 1px $mainBorder_2;
                     border-radius: 5px;
 
                     &:nth-of-type(3n) {
@@ -391,11 +393,11 @@
                                 display: none;
                                 width: auto;
                                 height: auto;
+                                @include smallTip;
                                 position: absolute;
                                 left: 50%;
                                 transform: translateX(-50%);
                                 bottom: -30px;
-                                @include walletInner;
                             }
                         }
                     }
@@ -440,6 +442,42 @@
                     }
                 }
             }
+        }
+    }
+
+    //下方按鈕
+    .options {
+        width: 92vw;
+        height: 50px;
+        margin: 0 auto 17px;
+        @include longBtn;
+
+        &:active,&.active {
+
+            .betting_ic,.deal_ic {
+                background-position-y: calc(100% - 1px);
+            }
+
+            .arrow_ic {
+                background-position-y: 100%;
+            }
+        }
+
+        .betting_ic,.deal_ic {
+            display: block;
+            width: 6vw;
+            height: 8vw;
+            margin-right: 4vw;
+        }
+        .deal_ic {
+            background-position-x: 100%;
+        }
+
+        .arrow_ic {
+            display: block;
+            width: 2vw;
+            height: 3.4vw;
+            transform: scaleX(-1);
         }
     }
 }

@@ -90,6 +90,10 @@
                             <button class="copy">複製</button>
                         </span>
                     </li>
+                    <li class="forQR">
+                        <span>推廣網址QR code</span>
+                        <div class="qrCode"></div>
+                    </li>
                 </ul> 
             </div>
             <div class="info_2">
@@ -112,7 +116,13 @@
                             <i class="check"></i>
                             綁定手機號碼
                         </span>
-                        <span>0987654325</span>
+                        <span>
+                            0987654325
+                            <button class="changePhoneBtn">
+                                變更
+                                <i class="arrow_ic"></i>
+                            </button>
+                        </span>
                     </li>
                     <li>
                         <span>
@@ -171,6 +181,28 @@
     </footer>
     <!--彈窗-->
     <div class="filter">
+        <!--更變手機-->
+        <div class="jumpWindow phoneWindow">
+            <div class="title">
+                <p>更變手機</p>
+                <i class="close"></i>
+            </div>
+            <p class="smallTitle">
+                <span>原有號碼：</span>
+                0987654325
+            </p>
+            <form>
+                <label>
+                    <input type="text" placeholder="新手機號碼">
+                    <button type="button" class="cellphoneCheck">取得驗證碼</button>
+                </label>
+                <label>
+                    <input type="text" placeholder="驗證碼">
+                </label>
+                <button class="checkBtn">確認</button>
+                <p class="remind">送出驗證碼後，請立即連繫在線客服</p>
+            </form>
+        </div>
         <!--更變密碼-->
         <div class="jumpWindow passwordWindow">
             <div class="title">

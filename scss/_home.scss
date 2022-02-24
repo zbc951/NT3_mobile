@@ -1,17 +1,34 @@
 //跑馬燈
 .marqueeBox {
-    width: 100%;
+    width: 92%;
     height: 30px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 15px;
+    margin: 10px auto;
+    background: $mainBG_1;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 2px #ede5d7;
 
     .marquee_ic {
         display: block;
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
+        width: 17%;
+        height: 88%;
+        border-radius: 30px;
+        margin: 0 8px 0 2px;
+        z-index: 1;
+        position: relative;
+        background: $marqueeIcon;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 18px;
+            height: 18px;
+        }
     }
 
     .marquee {
@@ -42,34 +59,36 @@
 //登入區
 .memberArea {
     width: 100%;
-    height: 80px;
+    height: 55px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     //大登入按鈕
     .loginBtn {
         display: none;
         align-items: center;
         justify-content: center;
-        background: $operate_BG;
-        width: 37.4vw;
-        height: 100%;
-        border-radius: 1.5vw 0 0 1.5vw;
+        width: 30vw;
+        height: 70%;
+        @include operateBtn;
+        border-radius: 30px;
+        padding: 0 0 1px 3px;
+        margin-right: 3vw;
 
         &.display {
             display: flex;
         }
 
-        .login_ic {
-            width: 25px;
-            height: 25px;
-            margin-right: 10px;
-        }
+        // .login_ic {
+        //     width: 25px;
+        //     height: 25px;
+        //     margin-right: 10px;
+        // }
 
         span {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: bold;
-            color: $operate_Btn;
         }
     }
 
@@ -78,7 +97,6 @@
         justify-content: center;
         align-items: center;
         padding: 0 1.33vw 0 2vw;
-        background: $operate_BG;
         width: 37.4vw;
         height: 100%;
         border-radius: 1.5vw 0 0 1.5vw;
@@ -108,7 +126,7 @@
                     max-width: 33.76vw;
                     font-weight: bold;
                     font-size: 1rem;
-                    color: $operate_Money;
+                    color: $money;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -138,17 +156,26 @@
 
     //轉存提+vip
     .operate {
-        background: $operate_BG;
         border-radius: 0 1.5vw 1.5vw 0;
         width: 54.6vw;
         height: 100%;
         display: flex;
         align-items: center;
 
+        &.login {
+
+            .btnBox {
+                padding: 0 6%;
+
+                .vipBtn {
+                    display: inline-block;
+                }
+            }
+        }
+
         .btnBox {
             width: 100%;
             height: 60px;
-            border-left: solid 1px $operate_Border;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -161,6 +188,7 @@
                 @include operateBtn;
 
                 &.vipBtn {
+                    display: none;
                     font-size: 15px;
                 }
             }
@@ -181,62 +209,87 @@
     //遊戲種類選單
     .gameList {
         width: auto;
-        height: 73.7vw;
+        height: auto;
 
-        li {
-            width: 25.6vw;
-            height: 11.47vw;
-            margin-bottom: 3px;
-            @include gameListBtn;
+        ol {
+            width: auto;
+            height: auto;
+            @include gameListBG;
 
-            &:last-child {
-                margin: 0;
-            }
-
-            &.slotBtn,&.fishBtn {
-                
-                div {
-                    padding: 0 9px 0px 8px;
-                }
-            }
-
-            &.active {
-
-                div {
-
-                    p {
-                        color: $gameListBtn_ActiveWord;
-                    }
-                }
-            }
-
-            div {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 24vw;
-                height: 9.87vw;
-                @include gameListBtn;
-                background: $gameListBtn_BG;
-                padding: 0 16px 0 11px;
-                justify-content: space-between;
-                border-radius: 3px;
-
-                p {
-                    font-size: 12px;
-                    color: $gameListBtn_Word;
+                height: 20vw;
+                position: relative;
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 85%;
+                    height: 1px;
+                    background: $gameListBtn_Border;
                 }
-
-                i {
-                    display: block;
-                    width: 6.4vw;
-                    height: 6.4vw;
-
-                    &.slot_ic {
-                        width: 30px;
-                        height: 16px;
+    
+                &.active {
+    
+                    div {
+                        background: $gameListBtn_ActiveBG;
+    
+                        p {
+                            color: $gameListBtn_ActiveWord;
+                        }
+    
+                        i {
+                            background-position-y: 100%;
+                        }
                     }
-
-                    &.fish_ic {
+                }
+    
+                div {
+                    width: 85%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-radius: 3px;
+    
+                    p {
+                        margin-top: 2vw;
+                        font-size: 3.4vw;
+                        font-weight: bold;
+                        color: $gameListBtn_Word;
+                    }
+    
+                    i {
+                        display: block;
                         width: 8vw;
-                        height: 4.27vw;
+                        height: 8vw;
+    
+                        &.live_ic {
+                            background-position-x: 20%;
+                        }
+    
+                        &.slot_ic {
+                            background-position-x: 40%;
+                        }
+    
+                        &.lottery_ic {
+                            background-position-x: calc(60% - 1px);
+                        }
+    
+                        &.fish_ic {
+                            background-position-x: 80%;
+                        }
+    
+                        &.board_ic {
+                            background-position-x: 100%;
+                        }
                     }
                 }
             }
@@ -246,7 +299,7 @@
     //遊戲選擇
     .gameBox {
         flex-wrap: wrap;
-        width: 63.3vw;
+        width: 65vw;
         height: auto;
         display: none;
 
@@ -255,29 +308,20 @@
         }
 
         li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: solid 1px $mainBorder_1;
-            border-radius: 5px;
-            width: 30.4vw;
-            height: 23.2vw;
-            padding-top: 3px;
-            margin: 0 4px 5px 0;
+            width: 100%;
+            height: 45vw;
+            position: relative;
+            margin-bottom: 2vw;
 
             &:nth-of-type(2n) {
                 margin-right: 0;
             }
 
-            img {
-                border-radius: 3px;
-                border: solid 1px $mainBorder_1;
-            }
-
             p {
-                font-size: 12px;
-                color: $mainWord_1;
-                padding-top: 0.9vw;
+                position: absolute;
+                bottom: 4vw;
+                left: 7vw;
+                @include gameBoxWord;
             }
         }
     }

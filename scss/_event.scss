@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     overflow-x: auto;
-    background: $mainBG_2;
+    background: $mainBG_1;
 
     ul {
         display: flex;
@@ -48,7 +48,7 @@
     overflow-y: auto;
     box-sizing: border-box;
     padding: 10px 14px 0;
-    background: $mainBG_3;
+    background: $mainBG_2;
 
     ul {
         display: flex;
@@ -62,13 +62,16 @@
             .eventBox {
                 width: 100%;
                 height: auto;
-                background: $mainBG_2;
+                background: $mainBG_1;
                 border-radius: 1.5vw;
                 overflow: hidden;
-                box-shadow: 0 0 13px 5px $boxshadow_1;
+                border: solid 1px $mainBorder_2;
 
                 .eventImg {
-                    background: $mainBG_3;
+                    background: $mainBG_2;
+                    margin: 6px auto 10px;
+                    border-radius: 5px;
+                    overflow: hidden;
                 }
 
                 p {
@@ -99,15 +102,21 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 15px;
-    background: $mainBG_3;
+    background: $mainBG_2;
+    overflow-y: auto;
 
-    .detailHeader,.detailContent {
+    .eventImg {
+        box-sizing: border-box;
+        padding: 6px;
+    }
+
+    .detailContent {
         width: 94.13vw;
         height: auto;
         box-sizing: border-box;
         padding: 10px 15px 15px;
         margin-top: 10px;
-        background: $mainBG_2;
+        background: $mainBG_1;
         border-radius: 5px;
         box-shadow: 0 0 5px 0 $boxshadow_2;
 
@@ -125,37 +134,39 @@
                 color: $title_1;
             }
 
-            .content {
-                display: flex;
+            ul {
+                list-style: disc;
+                width: 90%;
+                margin: 0 auto;
 
-                div {
-                    color: $mainWord_1;
-                    font-weight: bold;
+                li {
                     font-size: 14px;
+                    font-weight: bold;
+                    color: $mainWord_1;
+                    margin-top: 20px;
+                    color: $title_2;
+                    line-height: 18px;
 
                     &:nth-of-type(1) {
-                        width: 20vw;
-                        color: $title_2;
+                        margin-top: 10px;
                     }
 
-                    &:nth-of-type(2) {
-                        width: 62vw;
-                        font-size: 14px;
-                        font-weight: bold;
-                        display: flex;
-                        flex-wrap: wrap;
-                        padding-left: 15px;
+                    .innerImg {
+                        margin-top: 10px;
                     }
-                }
-            }
 
-            .infoBox {
-                
-                p {
-                    font-weight: bold;
-                    color: $mainWord_1;
-                    font-size: 14px;
-                    line-height: 20px;
+                    ul {
+                        list-style: decimal;
+    
+                        li {
+                            color: $mainWord_1;
+                            margin-top: 10px;
+
+                            &.sp {
+                                color: $remind;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -166,7 +177,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px 0 8px;
+            padding: 20px 0;
         }
     }
 }

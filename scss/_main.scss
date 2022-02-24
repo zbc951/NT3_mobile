@@ -12,6 +12,15 @@ html {
             padding: 45px 0 48px;
         }
 
+        .bg {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -999;
+        }
+
         @import "./header";
         @import "./ad";
         @import "./home";
@@ -30,7 +39,6 @@ html {
         @import "./mail";
         @import "./card";
         @import "./record";
-        @import "./wallet";
         @import "./deposit";
         @import "./transfer";
         @import "./withdrawal";

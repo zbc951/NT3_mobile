@@ -17,10 +17,37 @@ footer {
             height: 38px;
             @include footerWord;
 
+            &.active {
+
+                i {
+                    background-position-y: 100%;
+                }
+            }
+
             i {
                 display: block;
-                width: 22px;
-                height: 20px;
+                width: 20px;
+                height: 21px;
+
+                &.menu_ic {
+                    background-position-x: 1px;
+                }
+
+                &.event_ic {
+                    background-position-x: 25%;
+                }
+
+                &.wallet_ic {
+                    background-position-x: 50%;
+                }
+
+                &.service_ic {
+                    background-position-x: 75%;
+                }
+
+                &.center_ic {
+                    background-position-x: 100%;
+                }
             }
 
             p {

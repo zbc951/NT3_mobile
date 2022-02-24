@@ -6,7 +6,7 @@ $(document).on('ready', function() {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 3500,
-		arrows: false,
+		arrows: true,
 	})
 })
 
@@ -78,6 +78,10 @@ $(function(){
         $('.filter,.eventWindow').addClass('display');
     })
 
+    $(".changePhoneBtn").click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter,.phoneWindow').addClass('display');
+    })
     $(".changePwdBtn").click(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.passwordWindow').addClass('display');
@@ -111,6 +115,11 @@ $(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.bettingDetail').addClass('display');
     })
+
+    $(".bettingWrap .recordBox .check").click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter,.pointWindow').addClass('display');
+    })
 })
 //請先登入
 function unlogin(){
@@ -134,8 +143,8 @@ $(function(){
 //news切換
 $(function(){
     $('.jumpWindow.news .typeList li').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
+        $($(this).children()).addClass('active');
+        $($(this).siblings().children()).removeClass('active');
     })
 
     $('.jumpWindow.news .typeList li:nth-of-type(1)').click(function(){
@@ -159,13 +168,15 @@ $(function(){
     $('.realLogin').click(function(){
         $('.jumpWindow,.loginBtn').removeClass('display');
         $('.filter,.news,.alLogin').addClass('display');
+        $('.operate').addClass("login");
         
-        $('.gameBox.slotBox li').attr('onclick',"window.location.href='./html/slotPage.html'");
-        $('.gameBox.fishBox li').attr('onclick',"callFish()");
+        $('.gameBox.slotBox li').attr('onclick',"callSlot()");
         $('.gameBox.liveBox li').attr('onclick',"callLive()");
         $('.gameBox.sportBox li').attr('onclick',"callSport()");
         $('.gameBox.lotteryBox li').attr('onclick',"callLottery()");
-        $('.gameBox.boardBox li').attr('onclick',"callBoard()");
+
+        $(".gameList .fishBtn").attr('onclick',"window.location.href='./html/fishPage.html'");
+        $(".gameList .boardBtn").attr('onclick',"window.location.href='./html/boardPage.html'");
 
         $('.operate button:eq(0)').attr('onclick',"window.location.href='./html/deposit.html'");
         $('.operate button:eq(1)').attr('onclick',"window.location.href='./html/transfer.html'");

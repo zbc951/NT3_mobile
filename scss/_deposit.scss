@@ -2,7 +2,7 @@
 .depositWrap {
     width: 100%;
     height: calc(100vh - 125px);
-    background: $mainBG_3;
+    background: $mainBG_2;
     overflow-y: auto;
     box-sizing: border-box;
     padding: 10px 0;
@@ -10,7 +10,7 @@
     .depList {
         width: 100%;
         height: auto;
-        background: $mainBG_2;
+        background: $mainBG_1;
         padding: 10px 15px 15px;
         margin-bottom: 10px;
         display: none;
@@ -43,34 +43,7 @@
                     width: 22.4vw;
                     height: 19.2vw;
                     margin-right: 5px;
-                    @include normalBtn;
-                    flex-direction: column;
-                    position: relative;
-                    overflow: hidden;
-
-                    &.active {
-                        border-color: $mainBorder_2;
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            right: 0;
-                            bottom: 0;
-                            transform: translate(50%,50%) rotate(45deg);
-                            background: $mainBG_1;
-                            width: 8vw;
-                            height: 8vw;
-                        }
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            right: 0.5vw;
-                            bottom: 0.5vw;
-                            width: 2.5vw;
-                            height: 2.5vw;
-                        }
-                    }
+                    @include depositBtn;
 
                     i {
                         display: block;
@@ -79,9 +52,6 @@
                     }
 
                     p {
-                        color: $mainWord_1;
-                        font-weight: bold;
-                        font-size: 12px;
                         margin-top: 6px;
                         text-align: center;
                     }
@@ -97,7 +67,7 @@
         padding: 10px 15px 15px;
         margin-bottom: 10px;
         box-sizing: border-box;
-        background: $mainBG_2;
+        background: $mainBG_1;
 
         &.display {
             display: block;
@@ -200,7 +170,7 @@
                     .checkBox {
                         width: 95%;
                         height: auto;
-                        @include security;
+                        @include wordBox;
                         padding: 15px 0;
                         flex-direction: column;
                         margin: 0 auto;

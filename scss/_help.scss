@@ -3,7 +3,7 @@
     display: none;
     width: 100%;
     height: auto;
-    background: $mainBG_3;
+    background: $mainBG_2;
 
     &.display {
         display: block;
@@ -24,10 +24,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: $mainBG_2;
+            background: $mainBG_1;
             box-shadow: 0 0 13px 2px $boxshadow_1;
             position: relative;
             border-radius: 5px;
+            border: solid 1px $mainBorder_2;
 
             p {
                 color: $title_1;
@@ -37,8 +38,8 @@
 
             .arrow_ic {
                 display: block;
-                width: 9px;
-                height: 16px;
+                width: 2vw;
+                height: 3.4vw;
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%) rotate(270deg);
@@ -79,13 +80,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: $mainBG_2;
+                background: $mainBG_1;
                 border-radius: 5px;
                 box-shadow: 0 0 5px 0 $boxshadow_2;
                 margin-bottom: 15px;
                 font-size: 14px;
                 font-weight: bold;
-                color: $mainWord_1;
+                color: $title_2;
+                border: solid 1px $mainBorder_2;
             }
         }
     }
@@ -96,7 +98,6 @@
     display: none;
     width: 100%;
     height: calc(100vh - 94px);
-    background: $mainBG_3;
     overflow-y: auto;
 
     &.display {
@@ -134,13 +135,14 @@
             .title {
                 width: 92.27vw;
                 height: 52px;
-                background: $mainBG_2;
+                background: $mainBG_1;
                 box-shadow: 0 0 5px 0 $boxshadow_2;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 auto;
+                border: solid 1px $mainBorder_2;
 
                 .icon {
                     display: block;
@@ -152,8 +154,8 @@
 
                 .arrow_ic {
                     display: block;
-                    width: 9px;
-                    height: 16px;
+                    width: 2vw;
+                    height: 3.4vw;
                     margin: 0 4vw;
                     flex-shrink: 0;
                     transform: rotate(180deg);
@@ -164,7 +166,7 @@
                     width: 100%;
                     font-size: 14px;
                     font-weight: bold;
-                    color: $mainWord_1;
+                    color: $title_1;
                 }
             }
 
@@ -175,6 +177,15 @@
                 box-sizing: border-box;
                 padding: 10px;
                 margin: 0 auto;
+                border: solid 1px $mainBorder_2;
+                border-top: none;
+                background: $mainBG_1;
+                border-radius: 0 0 5px 5px;
+
+                &.app {
+                    background: none;
+                    border: none;
+                }
 
                 p {
                     line-height: 22px;
@@ -184,9 +195,10 @@
                     margin-bottom: 8px;
 
                     &.smallTitle {
-                        font-size: 18px;
+                        font-size: 22px;
                         margin: 20px 0 10px;
                         color: $title_2;
+                        text-align: center;
 
                         &.first {
                             margin-top: 0;
@@ -197,6 +209,7 @@
                         font-size: 18px;
                         color: $title_2;
                         margin: 15px 0;
+                        text-align: center;
 
                         .downloadBtn {
                             width: 144px;
@@ -236,15 +249,10 @@
 
                     div {
                         width: 100%;
-                        height: auto;
+                        height: 105px;
                         position: relative;
-                        display: flex;
-                        box-sizing: border-box;
-                        padding: 15px 15px 15px 18vw;
-                        border-radius: 5px;
-                        flex-direction: column;
-                        justify-content: space-between;
                         margin-bottom: 15px;
+                        @include help_lineBtn;
 
                         i {
                             display: block;
@@ -261,14 +269,10 @@
                             font-size: 3.4vw;
                             font-weight: bold;
                             margin: 0;
-                        }
 
-                        &:nth-of-type(1) {
-                            @include help_onlineBtn;
-                        }
-
-                        &:nth-of-type(2) {
-                            @include help_lineBtn;
+                            &:nth-of-type(1) {
+                                font-size: 5vw;
+                            }
                         }
                     }
                 }

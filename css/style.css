@@ -7,124 +7,29 @@ button:disabled {
   pointer-events: none;
 }
 
-.marqueeBox .marquee_ic {
-  background: url("../images/icon/svg/marquee.svg") no-repeat;
+.bg {
+  background: url("../images/bg.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+
+.marqueeBox .marquee_ic::before {
+  background: url("../images/icon/marqueeIC.png") no-repeat center;
   background-size: 100%;
 }
 
-.loginBtn .login_ic {
-  background: url("../images/icon/svg/sign_in.svg") no-repeat;
-  background-size: 100%;
+.filter .title {
+  background: url("../images/loginTop.jpg") no-repeat top center;
+  background-size: cover;
 }
 
-.gameList .slotBtn .slot_ic {
-  background: url("../images/icon/svg/slot.svg") no-repeat;
-  background-size: 100%;
+.gameList i {
+  background: url("../images/icon/gamesListIC.png") no-repeat;
+  background-size: 600%;
 }
 
-.gameList .fishBtn .fish_ic {
-  background: url("../images/icon/svg/fish.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .liveBtn .live_ic {
-  background: url("../images/icon/svg/live.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .sportBtn .sport_ic {
-  background: url("../images/icon/svg/sport.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .lotteryBtn .lottery_ic {
-  background: url("../images/icon/svg/lotto.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .boardBtn .board_ic {
-  background: url("../images/icon/svg/board.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .slotBtn.active .slot_ic {
-  background: url("../images/icon/svg/slot2.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .fishBtn.active .fish_ic {
-  background: url("../images/icon/svg/fish2.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .liveBtn.active .live_ic {
-  background: url("../images/icon/svg/live2.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .sportBtn.active .sport_ic {
-  background: url("../images/icon/svg/sport2.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .lotteryBtn.active .lottery_ic {
-  background: url("../images/icon/svg/lotto2.svg") no-repeat;
-  background-size: 100%;
-}
-
-.gameList .boardBtn.active .board_ic {
-  background: url("../images/icon/svg/board2.svg") no-repeat;
-  background-size: 100%;
-}
-
-footer li .menu_ic {
-  background: url("../images/icon/svg/home.svg") no-repeat top center;
-  background-size: 100%;
-}
-
-footer li .event_ic {
-  background: url("../images/icon/svg/discount.svg") no-repeat top center;
-  background-size: 100%;
-}
-
-footer li .wallet_ic {
-  background: url("../images/icon/svg/wallet.svg") no-repeat top center;
-  background-size: 100%;
-}
-
-footer li .service_ic {
-  background: url("../images/icon/svg/service.svg") no-repeat top center;
-  background-size: 72%;
-}
-
-footer li .center_ic {
-  background: url("../images/icon/svg/member.svg") no-repeat top center;
-  background-size: 79%;
-}
-
-footer li.active .menu_ic {
-  background: url("../images/icon/svg/home2.svg") no-repeat top center;
-  background-size: 100%;
-}
-
-footer li.active .event_ic {
-  background: url("../images/icon/svg/discount2.svg") no-repeat top center;
-  background-size: 100%;
-}
-
-footer li.active .wallet_ic {
-  background: url("../images/icon/svg/wallet2.svg") no-repeat top center;
-  background-size: 100%;
-}
-
-footer li.active .service_ic {
-  background: url("../images/icon/svg/service2.svg") no-repeat top center;
-  background-size: 72%;
-}
-
-footer li.active .center_ic {
-  background: url("../images/icon/svg/member2.svg") no-repeat top center;
-  background-size: 79%;
+footer i {
+  background: url("../images/icon/footerIC.png") no-repeat;
+  background-size: 500%;
 }
 
 .jumpWindow .title .close {
@@ -134,7 +39,7 @@ footer li.active .center_ic {
 
 .jumpWindow.loginWindow .title .icon,
 .jumpWindow.registerWindow .title .icon {
-  background: url("../images/icon/svg/sign_in_w.svg") no-repeat;
+  background: url("../images/icon/loginIC.png") no-repeat;
   background-size: 100%;
 }
 
@@ -143,15 +48,9 @@ footer li.active .center_ic {
   background-size: 100%;
 }
 
-.jumpWindow .choose .line span {
-  background: url("../images/icon/choose_ic.png") no-repeat;
-  background-size: 100%;
-}
-
-.jumpWindow .choose .weChat span {
-  background: url("../images/icon/choose_ic.png") no-repeat;
-  background-size: 100%;
-  background-position-y: 100%;
+.jumpWindow.bettingDetail .pageBox .arrowBox i {
+  background: url("../images/icon/svg/unfold.svg") no-repeat center;
+  background-size: contain;
 }
 
 header .back_arrow {
@@ -162,6 +61,16 @@ header .back_arrow {
 header .refresh_ic {
   background: url("../images/icon/svg/refresh_w.svg") no-repeat;
   background-size: 100%;
+}
+
+header .editBtn {
+  background: url("../images/icon/svg/edit.svg") no-repeat;
+  background-size: 100%;
+}
+
+header .content {
+  background: url("../images/headerTop.jpg") no-repeat top center;
+  background-size: cover;
 }
 
 .slotHeader li .all_ic {
@@ -219,11 +128,6 @@ header .refresh_ic {
   background-size: 100%;
 }
 
-.walletWrap .amount .title .icon {
-  background: url("../images/icon/svg/problem_gr.svg") no-repeat;
-  background-size: 100%;
-}
-
 .walletWrap .deposit_ic {
   background: url("../images/icon/svg/deposit.svg") no-repeat;
   background-size: 100%;
@@ -244,163 +148,69 @@ header .refresh_ic {
   background-size: 100%;
 }
 
-.walletWrap .refresh_ic {
-  background: url("../images/icon/svg/refresh.svg") no-repeat;
+.walletWrap .options .betting_ic,
+.walletWrap .options .deal_ic {
+  background: url("../images/icon/walletIC.png") no-repeat;
+  background-size: 200%;
+}
+
+.walletWrap .arrow_ic {
+  background: url("../images/icon/arrow_b.png") no-repeat;
   background-size: 100%;
 }
 
 .memberWrap .arrow_ic {
-  background: url("../images/icon/svg/arrow_r.svg") no-repeat;
+  background: url("../images/icon/arrow_b.png") no-repeat;
   background-size: 100%;
 }
 
-.memberWrap .wallet_ic {
-  background: url("../images/icon/svg/wallet_r.svg") no-repeat center;
-  background-size: 100%;
-}
-
+.memberWrap .wallet_ic,
 .memberWrap .vip_ic {
-  background: url("../images/icon/svg/vip.svg") no-repeat center;
-  background-size: 100%;
+  background: url("../images/icon/memberBigBtn.png") no-repeat;
+  background-size: 200%;
 }
 
-.memberWrap .bet_ic {
-  background: url("../images/icon/svg/betting_record.svg") no-repeat center;
-  background-size: 100%;
-}
-
-.memberWrap .deal_ic {
-  background: url("../images/icon/svg/transaction.svg") no-repeat center;
-  background-size: 100%;
-}
-
-.memberWrap .mail_ic {
-  background: url("../images/icon/svg/mail.svg") no-repeat center;
-  background-size: 100%;
-}
-
+.memberWrap .bet_ic,
+.memberWrap .deal_ic,
+.memberWrap .mail_ic,
 .memberWrap .card_ic {
-  background: url("../images/icon/svg/bankcard.svg") no-repeat center;
-  background-size: 100%;
+  background: url("../images/icon/memberMainBtn.png") no-repeat;
+  background-size: 400%;
 }
 
-.memberWrap .event_ic {
-  background: url("../images/icon/svg/quest.svg") no-repeat center;
-  background-size: 100%;
+.memberWrap .point_ic {
+  background: url("../images/icon/walletIC.png") no-repeat;
+  background-size: 200%;
 }
 
-.memberWrap .eventApply_ic {
-  background: url("../images/icon/svg/application.svg") no-repeat center;
-  background-size: 69%;
-}
-
-.memberWrap .help_ic {
-  background: url("../images/icon/svg/problem.svg") no-repeat center;
-  background-size: 100%;
-}
-
-.memberWrap .about_ic {
-  background: url("../images/icon/svg/marvel.svg") no-repeat center;
-  background-size: 100%;
-}
-
-.memberWrap .join_ic {
-  background: url("../images/icon/svg/joinus.svg") no-repeat center;
-  background-size: 100%;
-}
-
-.memberWrap .app_ic {
-  background: url("../images/icon/svg/download.svg") no-repeat center;
-  background-size: 100%;
-}
-
-.memberWrap .lang_ic {
-  background: url("../images/icon/svg/language.svg") no-repeat center;
-  background-size: 100%;
-}
-
+.memberWrap .eventApply_ic,
+.memberWrap .help_ic,
+.memberWrap .about_ic,
+.memberWrap .app_ic,
+.memberWrap .lang_ic,
 .memberWrap .logout_ic {
-  background: url("../images/icon/svg/exit.svg") no-repeat center;
+  background: url("../images/icon/memberIC.png") no-repeat;
+  background-size: 700%;
+}
+
+.memberInfo .info_2 .check {
+  background: url("../images/icon/svg/check.svg") no-repeat;
   background-size: 100%;
 }
 
-.appWrap .download_ic {
-  background: url("../images/icon/svg/download.svg") no-repeat;
+.memberInfo .info_2 .noCheck {
+  background: url("../images/icon/svg/nocheck.svg") no-repeat;
   background-size: 100%;
 }
 
-.joinUsWrap {
-  background: url("../images/joinus_bg.png") no-repeat;
+.memberInfo .info_2 .arrow_ic {
+  background: url("../images/icon/arrow_b.png") no-repeat;
   background-size: 100%;
 }
 
-.joinUsWrap .accurate_ic {
-  background: url("../images/icon/svg/accurate.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .quality_ic {
-  background: url("../images/icon/svg/quality.svg") no-repeat center;
-  background-size: 65%;
-}
-
-.joinUsWrap .commission_ic {
-  background: url("../images/icon/svg/commission.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .phone_ic {
-  background: url("../images/icon/svg/24hr.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .line_ic {
-  background: url("../images/icon/svg/line.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .weChat_ic {
-  background: url("../images/icon/svg/wechat.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .abundant_ic {
-  background: url("../images/icon/svg/abundant.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .stable_ic {
-  background: url("../images/icon/svg/stable.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .secret_ic {
-  background: url("../images/icon/svg/secret.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .safety_ic {
-  background: url("../images/icon/svg/safety.svg") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .photo {
-  background: url("../images/join_01.png") no-repeat;
-  background-size: 100%;
-}
-
-.joinUsWrap .phone {
-  background: url("../images/join_02.png") no-repeat;
-  background-size: 100%;
-}
-
-.helpWrap .selectBox .arrow_ic {
-  background: url("../images/icon/svg/arrow_gray.svg") no-repeat;
-  background-size: 100%;
-}
-
+.helpWrap .selectBox .arrow_ic,
 .helpInner .title .arrow_ic {
-  background: url("../images/icon/svg/arrow_gray.svg") no-repeat;
+  background: url("../images/icon/arrow_b.png") no-repeat;
   background-size: 100%;
 }
 
@@ -454,19 +264,14 @@ header .refresh_ic {
   background-size: 100%;
 }
 
-.memberInfo .info_2 .check {
-  background: url("../images/icon/svg/check.svg") no-repeat;
-  background-size: 100%;
+.helpInner .btnBox .online_ic {
+  background: url("../images/icon/svg/service3.svg") no-repeat center;
+  background-size: contain;
 }
 
-.memberInfo .info_2 .noCheck {
-  background: url("../images/icon/svg/nocheck.svg") no-repeat;
-  background-size: 100%;
-}
-
-.memberInfo .info_2 .arrow_ic {
-  background: url("../images/icon/svg/arrow_r.svg") no-repeat;
-  background-size: 100%;
+.helpInner .btnBox .line_ic {
+  background: url("../images/icon/svg/line.svg") no-repeat center;
+  background-size: contain;
 }
 
 .vipWrap .medal {
@@ -474,33 +279,25 @@ header .refresh_ic {
   background-size: contain;
 }
 
-.vipWrap .cardBox i {
-  background: url("../images/icon/svg/arrow_r.svg") no-repeat;
-  background-size: contain;
-}
-
-.vipWrap .checkBtn .arrow {
-  background: url("../images/icon/svg/arrow_r.svg") no-repeat;
-  background-size: contain;
-}
-
+.vipWrap .cardBox i,
+.vipWrap .checkBtn .arrow_ic,
 .vipDetail .list i::before {
-  background: url("../images/icon/svg/arrow_r.svg") no-repeat;
-  background-size: contain;
+  background: url("../images/icon/arrow_b.png") no-repeat;
+  background-size: 100%;
 }
 
-.vipWrap .cardBox .card li {
+.vipWrap .cardBox .card li.vip0 {
   background: url("../images/vip_card.png") no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
-.vipWrap .cardBox .card li.cur {
-  background: url("../images/vip_card_a.png") no-repeat;
-  background-size: cover;
+.vipWrap .cardBox .card li.vip1 {
+  background: url("../images/vip_card_2.png") no-repeat;
+  background-size: 100%;
 }
 
-header .editBtn {
-  background: url("../images/icon/svg/edit.svg") no-repeat;
+.vipWrap .cardBox .card li.vip2 {
+  background: url("../images/vip_card_3.png") no-repeat;
   background-size: 100%;
 }
 
@@ -566,28 +363,13 @@ header .editBtn {
   background-size: contain;
 }
 
-.jumpWindow.bettingDetail .pageBox .arrowBox i {
-  background: url("../images/icon/svg/unfold.svg") no-repeat center;
-  background-size: contain;
-}
-
-.helpInner .btnBox .online_ic {
-  background: url("../images/icon/svg/service3.svg") no-repeat center;
-  background-size: contain;
-}
-
-.helpInner .btnBox .line_ic {
-  background: url("../images/icon/svg/line.svg") no-repeat center;
-  background-size: contain;
-}
-
 header .logo {
-  width: 56px;
+  width: 95px;
 }
 
 .single-item {
   width: 100%;
-  height: 43.73vw;
+  height: 45vw;
 }
 .single-item img {
   width: 100%;
@@ -596,8 +378,8 @@ header .logo {
 }
 
 .homeCenter .gameBox img {
-  width: 28.27vw;
-  height: 17.4vw;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -608,8 +390,8 @@ header .logo {
 }
 
 .eventList .eventImg {
-  width: 100%;
-  height: 38.28vw;
+  width: calc(100% - 12px);
+  height: 85px;
 }
 .eventList .eventImg img {
   width: 100%;
@@ -619,12 +401,19 @@ header .logo {
 
 .eventDetail .eventImg {
   width: 100%;
-  height: 41vw;
+  height: auto;
 }
 .eventDetail .eventImg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.eventDetail .innerImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .appWrap img {
@@ -730,6 +519,14 @@ html body {
 html body main {
   padding: 45px 0 48px;
 }
+html body .bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
 html body header {
   position: fixed;
   top: 0;
@@ -743,10 +540,10 @@ html body header .content {
   align-items: center;
   width: 100%;
   height: 45px;
-  background: #3d4cce;
   padding: 0 14px;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 html body header .content .title {
   width: 70%;
@@ -785,13 +582,13 @@ html body header .content .detailBtn {
   top: 50%;
   transform: translateY(-50%);
   right: 14px;
-  background: none;
-  border: solid 1px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+  border: solid 1px #bda16e;
   font-size: 13px;
   font-weight: bold;
-  color: #ffffff;
+  color: #a9894e;
   border-radius: 3px;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 html body header .content .detailBtn.edit {
   display: none;
@@ -854,19 +651,63 @@ html body .ad .single-item .slick-dots li.slick-active button::before {
   opacity: 1;
   background: #ffffff;
 }
+html body .ad .single-item .slick-prev, html body .ad .single-item .slick-next {
+  top: 0;
+  transform: translate(0);
+  width: 13vw;
+  height: 45vw;
+  z-index: 1;
+}
+html body .ad .single-item .slick-prev::before, html body .ad .single-item .slick-next::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-width: 0 0 6px 6px;
+  border-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+html body .ad .single-item .slick-prev {
+  left: 0;
+}
+html body .ad .single-item .slick-next {
+  right: 0;
+}
+html body .ad .single-item .slick-next::before {
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(-1);
+}
 html body .marqueeBox {
-  width: 100%;
+  width: 92%;
   height: 30px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 15px;
+  margin: 10px auto;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 2px #ede5d7;
 }
 html body .marqueeBox .marquee_ic {
   display: block;
+  width: 17%;
+  height: 88%;
+  border-radius: 30px;
+  margin: 0 8px 0 2px;
+  z-index: 1;
+  position: relative;
+  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
+}
+html body .marqueeBox .marquee_ic::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  margin-right: 8px;
 }
 html body .marqueeBox .marquee {
   width: 100%;
@@ -890,37 +731,40 @@ html body .marqueeBox .marquee pre {
 }
 html body .memberArea {
   width: 100%;
-  height: 80px;
+  height: 55px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 html body .memberArea .loginBtn {
   display: none;
   align-items: center;
   justify-content: center;
-  background: #f2f3f3;
-  width: 37.4vw;
-  height: 100%;
-  border-radius: 1.5vw 0 0 1.5vw;
+  width: 30vw;
+  height: 70%;
+  background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
+  box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
+  color: #ffffff;
+  padding: 0 1px 3px 0;
+  font-size: 21px;
+  border-radius: 50%;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 0 0 1px 3px;
+  margin-right: 3vw;
 }
 html body .memberArea .loginBtn.display {
   display: flex;
 }
-html body .memberArea .loginBtn .login_ic {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-}
 html body .memberArea .loginBtn span {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
-  color: #4d4d4d;
 }
 html body .memberArea .alLogin {
   justify-content: center;
   align-items: center;
   padding: 0 1.33vw 0 2vw;
-  background: #f2f3f3;
   width: 37.4vw;
   height: 100%;
   border-radius: 1.5vw 0 0 1.5vw;
@@ -980,17 +824,21 @@ html body .memberArea .alLogin ul li .lv {
   margin-left: 5px;
 }
 html body .memberArea .operate {
-  background: #f2f3f3;
   border-radius: 0 1.5vw 1.5vw 0;
   width: 54.6vw;
   height: 100%;
   display: flex;
   align-items: center;
 }
+html body .memberArea .operate.login .btnBox {
+  padding: 0 6%;
+}
+html body .memberArea .operate.login .btnBox .vipBtn {
+  display: inline-block;
+}
 html body .memberArea .operate .btnBox {
   width: 100%;
   height: 60px;
-  border-left: solid 1px #d7d8d8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1000,18 +848,17 @@ html body .memberArea .operate .btnBox {
 html body .memberArea .operate .btnBox button {
   width: 40px;
   height: 40px;
-  background: radial-gradient(circle, #cca172 40%, #f1d7b7 100%);
-  box-shadow: 1px 2px 4px 1px #96969666;
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
+  box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
   color: #ffffff;
+  padding: 0 1px 3px 0;
   font-size: 21px;
   border-radius: 50%;
   font-weight: bold;
-}
-html body .memberArea .operate .btnBox button:active, html body .memberArea .operate .btnBox button.active {
-  box-shadow: 0 1px 5px 2px #999999;
+  box-sizing: border-box;
 }
 html body .memberArea .operate .btnBox button.vipBtn {
+  display: none;
   font-size: 15px;
 }
 html body .homeCenter {
@@ -1025,62 +872,81 @@ html body .homeCenter {
 }
 html body .homeCenter .gameList {
   width: auto;
-  height: 73.7vw;
+  height: auto;
 }
-html body .homeCenter .gameList li {
-  width: 25.6vw;
-  height: 11.47vw;
-  margin-bottom: 3px;
-  border: solid 1px #cccccc;
+html body .homeCenter .gameList ol {
+  width: auto;
+  height: auto;
+  background: linear-gradient(to top, #ffffff 36%, #f5f5f5 100%);
+  border: solid 1px #b69761;
+  box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 #5a5a5a80;
   border-radius: 5px;
+}
+html body .homeCenter .gameList ol li {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-}
-html body .homeCenter .gameList li:last-child {
-  margin: 0;
-}
-html body .homeCenter .gameList li.slotBtn div, html body .homeCenter .gameList li.fishBtn div {
-  padding: 0 9px 0px 8px;
-}
-html body .homeCenter .gameList li.active div p {
-  color: #ad8047;
-}
-html body .homeCenter .gameList li div {
   width: 24vw;
-  height: 9.87vw;
-  border: solid 1px #cccccc;
-  border-radius: 5px;
+  height: 20vw;
+  position: relative;
+}
+html body .homeCenter .gameList ol li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 1px;
+  background: #b7a25f;
+}
+html body .homeCenter .gameList ol li.active div {
+  background: linear-gradient(to top, #e9cc93 0%, #be9c5b 100%);
+}
+html body .homeCenter .gameList ol li.active div p {
+  color: #ffffff;
+}
+html body .homeCenter .gameList ol li.active div i {
+  background-position-y: 100%;
+}
+html body .homeCenter .gameList ol li div {
+  width: 85%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
-  padding: 0 16px 0 11px;
-  justify-content: space-between;
+  flex-direction: column;
   border-radius: 3px;
 }
-html body .homeCenter .gameList li div p {
-  font-size: 12px;
-  color: #848484;
+html body .homeCenter .gameList ol li div p {
+  margin-top: 2vw;
+  font-size: 3.4vw;
+  font-weight: bold;
+  color: #4d4d4d;
 }
-html body .homeCenter .gameList li div i {
+html body .homeCenter .gameList ol li div i {
   display: block;
-  width: 6.4vw;
-  height: 6.4vw;
-}
-html body .homeCenter .gameList li div i.slot_ic {
-  width: 30px;
-  height: 16px;
-}
-html body .homeCenter .gameList li div i.fish_ic {
   width: 8vw;
-  height: 4.27vw;
+  height: 8vw;
+}
+html body .homeCenter .gameList ol li div i.live_ic {
+  background-position-x: 20%;
+}
+html body .homeCenter .gameList ol li div i.slot_ic {
+  background-position-x: 40%;
+}
+html body .homeCenter .gameList ol li div i.lottery_ic {
+  background-position-x: calc(60% - 1px);
+}
+html body .homeCenter .gameList ol li div i.fish_ic {
+  background-position-x: 80%;
+}
+html body .homeCenter .gameList ol li div i.board_ic {
+  background-position-x: 100%;
 }
 html body .homeCenter .gameBox {
   flex-wrap: wrap;
-  width: 63.3vw;
+  width: 65vw;
   height: auto;
   display: none;
 }
@@ -1088,27 +954,22 @@ html body .homeCenter .gameBox.display {
   display: flex;
 }
 html body .homeCenter .gameBox li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: solid 1px #cccccc;
-  border-radius: 5px;
-  width: 30.4vw;
-  height: 23.2vw;
-  padding-top: 3px;
-  margin: 0 4px 5px 0;
+  width: 100%;
+  height: 45vw;
+  position: relative;
+  margin-bottom: 2vw;
 }
 html body .homeCenter .gameBox li:nth-of-type(2n) {
   margin-right: 0;
 }
-html body .homeCenter .gameBox li img {
-  border-radius: 3px;
-  border: solid 1px #cccccc;
-}
 html body .homeCenter .gameBox li p {
-  font-size: 12px;
-  color: #000000;
-  padding-top: 0.9vw;
+  position: absolute;
+  bottom: 4vw;
+  left: 7vw;
+  text-shadow: 2px 3px 3px #332116, 2px -2px 3px #332116;
+  color: #ebd495;
+  font-size: 5vw;
+  font-weight: bold;
 }
 html body footer {
   width: 100%;
@@ -1121,7 +982,7 @@ html body footer {
 html body footer ul {
   width: 100%;
   height: 50px;
-  background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+  background: linear-gradient(0deg, #d7d7d7 0, #ffffff 76%);
   box-shadow: 0 0 8px 0 #dedede;
   display: flex;
   align-items: center;
@@ -1137,12 +998,30 @@ html body footer ul li {
   justify-content: center;
 }
 html body footer ul li.active {
-  color: #3d4cce;
+  color: #704a1a;
+}
+html body footer ul li.active i {
+  background-position-y: 100%;
 }
 html body footer ul li i {
   display: block;
-  width: 22px;
-  height: 20px;
+  width: 20px;
+  height: 21px;
+}
+html body footer ul li i.menu_ic {
+  background-position-x: 1px;
+}
+html body footer ul li i.event_ic {
+  background-position-x: 25%;
+}
+html body footer ul li i.wallet_ic {
+  background-position-x: 50%;
+}
+html body footer ul li i.service_ic {
+  background-position-x: 75%;
+}
+html body footer ul li i.center_ic {
+  background-position-x: 100%;
 }
 html body footer ul li p {
   font-size: 12px;
@@ -1173,16 +1052,14 @@ html body .filter .title {
   letter-spacing: 2px;
   font-weight: bold;
   color: #ffffff;
-  background: linear-gradient(to right, #7c4bff 0%, #887bff 100%);
   position: relative;
 }
 html body .filter .title i {
   width: 4.73vw;
   height: 4.73vw;
   position: absolute;
-  right: 5.38vw;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 3.5vw;
+  top: 3.5vw;
 }
 html body .filter .plsGo, html body .filter .plsGo2 {
   width: 92%;
@@ -1218,16 +1095,17 @@ html body .filter .plsGo .btnBox, html body .filter .plsGo2 .btnBox {
 html body .filter .plsGo .btnBox button, html body .filter .plsGo2 .btnBox button {
   width: 92%;
   height: 40px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .plsGo .btnBox button:active, html body .filter .plsGo .btnBox button.active, html body .filter .plsGo2 .btnBox button:active, html body .filter .plsGo2 .btnBox button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .loading {
   width: 92.27vw;
@@ -1279,11 +1157,11 @@ html body .filter .loginWindow.display {
   display: block;
 }
 html body .filter .loginWindow .title {
-  height: 15vw;
+  height: 18.67vw;
 }
 html body .filter .loginWindow .title .icon {
-  width: 7.47vw;
-  height: 7.47vw;
+  width: 8.6vw;
+  height: 8.6vw;
   margin-right: 16px;
 }
 html body .filter .loginWindow form {
@@ -1305,7 +1183,7 @@ html body .filter .loginWindow form label input {
   width: 77.6vw;
   height: 9.87vw;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -1334,7 +1212,7 @@ html body .filter .loginWindow form .forget {
 html body .filter .loginWindow form .forget p {
   font-size: 12px;
   font-weight: bold;
-  color: #cca172;
+  color: #af8c50;
 }
 html body .filter .loginWindow form .forget p span {
   margin: 0 2px;
@@ -1344,16 +1222,17 @@ html body .filter .loginWindow form .realLogin {
   width: 77.6vw;
   height: 11.2vw;
   margin: 8vw 0;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .loginWindow form .realLogin:active, html body .filter .loginWindow form .realLogin.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .loginWindow .registerBtn {
   color: #4d4d4d;
@@ -1365,7 +1244,7 @@ html body .filter .loginWindow .registerBtn {
 }
 html body .filter .loginWindow .registerBtn p {
   margin-left: 10px;
-  color: #cca172;
+  color: #af8c50;
 }
 html body .filter .forgetWindow {
   width: 92.27vw;
@@ -1391,7 +1270,7 @@ html body .filter .forgetWindow form input {
   height: 9.87vw;
   margin-top: 19px;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -1406,16 +1285,17 @@ html body .filter .forgetWindow form button {
   width: 77.6vw;
   height: 11.2vw;
   margin-top: 15px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .forgetWindow form button:active, html body .filter .forgetWindow form button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .forgetWindow form .remind {
   width: 100%;
@@ -1441,7 +1321,7 @@ html body .filter .registerWindow.display {
   display: block;
 }
 html body .filter .registerWindow .title {
-  height: 15vw;
+  height: 18.67vw;
 }
 html body .filter .registerWindow .title .icon {
   width: 7.47vw;
@@ -1464,7 +1344,7 @@ html body .filter .registerWindow form label input {
   width: 77.33vw;
   height: 9.6vw;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -1477,9 +1357,6 @@ html body .filter .registerWindow form label input::placeholder {
 }
 html body .filter .registerWindow form label.hasRemind {
   margin: 0;
-}
-html body .filter .registerWindow form label.hasChoose input {
-  padding-left: 16vw;
 }
 html body .filter .registerWindow form label.isCheck {
   width: 77.33vw;
@@ -1495,7 +1372,7 @@ html body .filter .registerWindow form label.isCheck input[type=checkbox] {
   margin-right: 10px;
 }
 html body .filter .registerWindow form label.isCheck p {
-  color: #cca172;
+  color: #af8c50;
 }
 html body .filter .registerWindow form label .eye {
   position: absolute;
@@ -1513,89 +1390,34 @@ html body .filter .registerWindow form label .cellphoneCheck {
   transform: translateY(-50%);
   right: 10px;
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
-}
-html body .filter .registerWindow form label .must {
-  color: #e11515;
-  font-weight: bold;
-  font-size: 13px;
 }
 html body .filter .registerWindow form .remind {
   width: 77.33vw;
   margin: 5px 0;
   font-size: 12px;
   color: #e11515;
-}
-html body .filter .registerWindow form .choose {
-  position: absolute;
-  width: 14vw;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 2;
-}
-html body .filter .registerWindow form .choose::before {
-  background: #939393;
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 5px;
-  transform: rotate(45deg) translateY(-50%);
-  top: 50%;
-  right: 3vw;
-  z-index: 2;
-}
-html body .filter .registerWindow form .choose::after {
-  background: #939393;
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 5px;
-  transform: rotate(-45deg) translateY(-50%);
-  top: 50%;
-  right: 3vw;
-}
-html body .filter .registerWindow form .choose li {
-  width: 100%;
-  height: 100%;
-  display: none;
-  background: linear-gradient(to top, #d9d9d9 0%, #ededed 50%, #ffffff 100%);
-  border: solid 1px #adadad;
-  border-radius: 3px;
-  position: relative;
-  box-sizing: border-box;
-}
-html body .filter .registerWindow form .choose li.display {
-  display: block;
-}
-html body .filter .registerWindow form .choose li span {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 2vw;
-  transform: translateY(-50%);
-  width: 6vw;
-  height: 6vw;
+  font-weight: bold;
 }
 html body .filter .registerWindow form .checkBtn {
   width: 77.33vw;
   height: 9.6vw;
-  padding: 10px 0;
   margin-bottom: 10px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .registerWindow form .checkBtn:active, html body .filter .registerWindow form .checkBtn.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .ruleWindow {
   width: 87.2vw;
@@ -1622,7 +1444,7 @@ html body .filter .ruleWindow .content .ruleBody h2 {
   padding: 10px 5px;
   font-weight: bold;
   line-height: 1.8;
-  color: #3d4cce;
+  color: #9c8018;
 }
 html body .filter .ruleWindow .content .ruleBody p {
   font-size: 3.4vw;
@@ -1657,16 +1479,17 @@ html body .filter .ruleWindow button {
   margin: 15px auto;
   width: 77.6vw;
   height: 11.2vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .ruleWindow button:active, html body .filter .ruleWindow button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .news {
   width: 87.2vw;
@@ -1684,7 +1507,9 @@ html body .filter .news .typeList {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #cccccc;
+  border-bottom: dotted 1px #cccccc;
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 html body .filter .news .typeList li {
   border-bottom: solid 2px transparent;
@@ -1692,20 +1517,25 @@ html body .filter .news .typeList li {
   width: auto;
   height: 14.4vw;
   align-items: center;
-  color: #848484;
-}
-html body .filter .news .typeList li:active, html body .filter .news .typeList li.active {
-  color: #3d4cce;
-  border-color: #3d4cce;
+  margin-right: 10px;
 }
 html body .filter .news .typeList li p {
   width: 22.67vw;
-  height: auto;
-  text-align: center;
-  font-size: 14px;
+  height: 10vw;
+  background: linear-gradient(to top, #d7d7d7 0%, #ffffff 58%, #ffffff 100%);
+  font-size: 4vw;
+  color: #848484;
+  border: solid 1px #957222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
-  letter-spacing: 1px;
-  border-right: solid 1px #cccccc;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+html body .filter .news .typeList li p:active, html body .filter .news .typeList li p.active {
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
+  color: #ffffff;
 }
 html body .filter .news .content {
   width: 100%;
@@ -1713,38 +1543,35 @@ html body .filter .news .content {
   max-height: 324px;
   overflow-y: auto;
   display: none;
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 html body .filter .news .content.display {
   display: block;
 }
 html body .filter .news .content li {
-  padding: 0px 24px;
+  padding: 15px 24px;
   border-bottom: solid 1px #cccccc;
   width: 100%;
-  height: 50px;
+  height: auto;
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: dotted 1px #957222;
 }
 html body .filter .news .content li .date {
   font-size: 12px;
   letter-spacing: 1px;
   color: #848484;
   font-weight: bold;
-  flex-shrink: 0;
+  margin-bottom: 6px;
 }
 html body .filter .news .content li .text {
-  width: 67%;
-  height: auto;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #000000;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 20px;
 }
 html body .filter .gameWindow {
   width: 91.94vw;
@@ -1779,11 +1606,12 @@ html body .filter .gameWindow form .row.btnBox button {
   height: 35px;
   margin-bottom: 5px;
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
+  font-size: 3.4vw;
 }
 html body .filter .gameWindow form .row.checkBtn {
   justify-content: flex-end;
@@ -1791,16 +1619,17 @@ html body .filter .gameWindow form .row.checkBtn {
 html body .filter .gameWindow form .row.checkBtn button {
   width: calc(100% - 20vw);
   height: 11.2vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .gameWindow form .row.checkBtn button:active, html body .filter .gameWindow form .row.checkBtn button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .gameWindow form .row .smallTitle {
   margin-right: 6vw;
@@ -1820,7 +1649,7 @@ html body .filter .gameWindow form .row input {
   width: 59.2vw;
   height: 9.86vw;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -1839,16 +1668,106 @@ html body .filter .gameWindow .enterBtn {
   width: 77.33vw;
   height: 11.46vw;
   margin: 4.8vw auto 0;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .gameWindow .enterBtn:active, html body .filter .gameWindow .enterBtn.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
+}
+html body .filter .phoneWindow {
+  width: 87.2vw;
+  height: auto;
+  padding-bottom: 7.2vw;
+  background: #ffffff;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  display: none;
+}
+html body .filter .phoneWindow.display {
+  display: block;
+}
+html body .filter .phoneWindow .smallTitle {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  color: #000000;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .phoneWindow .smallTitle span {
+  color: #4d4d4d;
+}
+html body .filter .phoneWindow form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5.06vw;
+  max-height: 140vw;
+  overflow: auto;
+}
+html body .filter .phoneWindow form label {
+  position: relative;
+  margin-bottom: 5.06vw;
+}
+html body .filter .phoneWindow form label input {
+  width: 77.33vw;
+  height: 9.6vw;
+  background: none;
+  border: solid 1px #957222;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 3px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+html body .filter .phoneWindow form label input::placeholder {
+  color: #848484;
+}
+html body .filter .phoneWindow form label .cellphoneCheck {
+  width: 23.2vw;
+  height: 8vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  background: #ffffff;
+  border: solid 1px #a7854d;
+  font-size: 13px;
+  font-weight: bold;
+  color: #a7854d;
+  border-radius: 3px;
+}
+html body .filter .phoneWindow form .remind {
+  width: 77.33vw;
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 4vw;
+  color: #e11515;
+  font-weight: bold;
+}
+html body .filter .phoneWindow form .checkBtn {
+  width: 77.33vw;
+  height: 9.6vw;
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #7c5625;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+html body .filter .phoneWindow form .checkBtn:active, html body .filter .phoneWindow form .checkBtn.active {
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .langWindow {
   width: 92vw;
@@ -1875,10 +1794,10 @@ html body .filter .langWindow ul li {
   width: 100%;
   height: 9.87vw;
   margin-bottom: 2.4vw;
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  background: linear-gradient(to top, #d7d7d7 0%, #ffffff 58%, #ffffff 100%);
   font-size: 4vw;
   color: #848484;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1887,9 +1806,8 @@ html body .filter .langWindow ul li {
   border-radius: 5px;
 }
 html body .filter .langWindow ul li:active, html body .filter .langWindow ul li.active {
-  background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
   color: #ffffff;
-  border-color: #cca172;
 }
 html body .filter .langWindow ul li:last-child {
   margin: 0;
@@ -1908,6 +1826,8 @@ html body .filter .eventWindow.display {
 html body .filter .eventWindow .content {
   width: 100%;
   height: auto;
+  max-height: 76vh;
+  overflow-y: auto;
   box-sizing: border-box;
   padding: 24px 63px 0;
 }
@@ -1916,7 +1836,11 @@ html body .filter .eventWindow .content p {
   letter-spacing: 1px;
   font-weight: bold;
   color: #000000;
-  line-height: 20px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+html body .filter .eventWindow .content img {
+  margin-bottom: 10px;
 }
 html body .filter .eventWindow .btnBox {
   width: 100%;
@@ -1927,16 +1851,17 @@ html body .filter .eventWindow .btnBox {
 html body .filter .eventWindow .btnBox button {
   width: 92%;
   height: 40px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .eventWindow .btnBox button:active, html body .filter .eventWindow .btnBox button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .passwordWindow {
   width: 92.27vw;
@@ -1959,7 +1884,7 @@ html body .filter .passwordWindow .content input {
   height: 9.87vw;
   margin-top: 19px;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -1974,16 +1899,17 @@ html body .filter .passwordWindow .content button {
   width: 77.6vw;
   height: 9.87vw;
   margin: 7.13vw 0 5vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .filter .passwordWindow .content button:active, html body .filter .passwordWindow .content button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .checkPoint {
   width: 92.27vw;
@@ -2064,7 +1990,12 @@ html body .filter .checkPoint ul li .point .info {
   padding: 6px 18px;
   color: #ffffff;
   border-radius: 3px;
+  font-size: 3vw;
+  position: relative;
   white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
 }
 html body .filter .checkPoint ul li .point .info::before {
   content: "";
@@ -2078,6 +2009,9 @@ html body .filter .checkPoint ul li .point .info::before {
   border-width: 0 4px 6px 4px;
   border-color: #cca172 transparent;
 }
+html body .filter .checkPoint ul li .point .info em {
+  color: #ffff00;
+}
 html body .filter .checkPoint ul li .point .info.display {
   display: flex;
 }
@@ -2088,17 +2022,18 @@ html body .filter .checkPoint ul li .point .info::before {
 html body .filter .checkPoint ul li button {
   width: 17.87vw;
   height: 6.13vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 12px;
 }
 html body .filter .checkPoint ul li button:active, html body .filter .checkPoint ul li button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .filter .accWindow, html body .filter .platWindow {
   width: 92.27vw;
@@ -2124,10 +2059,10 @@ html body .filter .accWindow .content .bigBox, html body .filter .platWindow .co
 html body .filter .accWindow .content .bigBox button, html body .filter .platWindow .content .bigBox button {
   width: 100%;
   height: 38px;
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  background: linear-gradient(to top, #d7d7d7 0%, #ffffff 58%, #ffffff 100%);
   font-size: 4vw;
   color: #848484;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2136,9 +2071,8 @@ html body .filter .accWindow .content .bigBox button, html body .filter .platWin
   border-radius: 3px;
 }
 html body .filter .accWindow .content .bigBox button:active, html body .filter .accWindow .content .bigBox button.active, html body .filter .platWindow .content .bigBox button:active, html body .filter .platWindow .content .bigBox button.active {
-  background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
   color: #ffffff;
-  border-color: #cca172;
 }
 html body .filter .accWindow .content .smallBox, html body .filter .platWindow .content .smallBox {
   width: 100%;
@@ -2152,10 +2086,10 @@ html body .filter .accWindow .content .smallBox button, html body .filter .platW
   width: 32%;
   height: 38px;
   margin: 0 2% 2% 0;
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  background: linear-gradient(to top, #d7d7d7 0%, #ffffff 58%, #ffffff 100%);
   font-size: 4vw;
   color: #848484;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2164,12 +2098,57 @@ html body .filter .accWindow .content .smallBox button, html body .filter .platW
   border-radius: 3px;
 }
 html body .filter .accWindow .content .smallBox button:active, html body .filter .accWindow .content .smallBox button.active, html body .filter .platWindow .content .smallBox button:active, html body .filter .platWindow .content .smallBox button.active {
-  background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
   color: #ffffff;
-  border-color: #cca172;
 }
 html body .filter .accWindow .content .smallBox button:nth-of-type(3n), html body .filter .platWindow .content .smallBox button:nth-of-type(3n) {
   margin-right: 0;
+}
+html body .filter .pointWindow {
+  width: 92.27vw;
+  height: auto;
+  background: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+html body .filter .pointWindow.display {
+  display: block;
+}
+html body .filter .pointWindow .content {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 24px;
+}
+html body .filter .pointWindow .content ul {
+  width: 100%;
+  height: auto;
+  border: solid 1px #957222;
+  border-radius: 5px;
+  overflow: hidden;
+}
+html body .filter .pointWindow .content ul li {
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  background: #f2f3f3;
+  border-bottom: solid 1px #957222;
+  display: flex;
+  align-items: center;
+}
+html body .filter .pointWindow .content ul li:last-child {
+  border: none;
+}
+html body .filter .pointWindow .content ul li.title {
+  background: #e8cb8e;
+  font-size: 16px;
+}
+html body .filter .pointWindow .content ul li p {
+  width: 50%;
+  text-align: center;
 }
 @media only screen and (max-width: 320px) {
   html body .homeCenter .gameList div {
@@ -2222,8 +2201,8 @@ html body .slotWrap .slotHeader .listBox ul li {
   border-bottom: solid 2px transparent;
 }
 html body .slotWrap .slotHeader .listBox ul li.active {
-  color: #3d4cce;
-  border-color: #3d4cce;
+  color: #c7a16e;
+  border-color: #c7a16e;
 }
 html body .slotWrap .slotHeader .listBox ul li i {
   display: block;
@@ -2355,10 +2334,10 @@ html body .eventType ul li {
   border-bottom: solid 2px transparent;
 }
 html body .eventType ul li:active, html body .eventType ul li.active {
-  border-color: #3d4cce;
+  border-color: #c7a16e;
 }
 html body .eventType ul li:active span, html body .eventType ul li.active span {
-  color: #3d4cce;
+  color: #c7a16e;
 }
 html body .eventType ul li .all_ic {
   width: 25px;
@@ -2393,10 +2372,13 @@ html body .eventList ul li .eventBox {
   background: #ffffff;
   border-radius: 1.5vw;
   overflow: hidden;
-  box-shadow: 0 0 13px 5px #dedede;
+  border: solid 1px #957222;
 }
 html body .eventList ul li .eventBox .eventImg {
   background: #f2f3f3;
+  margin: 6px auto 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 html body .eventList ul li .eventBox p {
   width: 100%;
@@ -2410,15 +2392,15 @@ html body .eventList ul li .eventBox p {
 html body .eventList ul li .eventBox p button {
   width: 95px;
   height: 27px;
-  background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
-  border: solid 1px #0282cc;
+  background: linear-gradient(to top, #f3dba7 0%, #a88754 50%, #f0d8a4 100%);
+  border: solid 1px #957222;
   border-radius: 1vw;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
 }
 html body .eventList ul li .eventBox p button:active, html body .eventList ul li .eventBox p button.active {
-  background: linear-gradient(to top, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
+  background: linear-gradient(to top, #f3dba7 0%, #a08761 100%);
 }
 html body .eventDetail {
   width: 100%;
@@ -2428,8 +2410,13 @@ html body .eventDetail {
   align-items: center;
   padding-bottom: 15px;
   background: #f2f3f3;
+  overflow-y: auto;
 }
-html body .eventDetail .detailHeader, html body .eventDetail .detailContent {
+html body .eventDetail .eventImg {
+  box-sizing: border-box;
+  padding: 6px;
+}
+html body .eventDetail .detailContent {
   width: 94.13vw;
   height: auto;
   box-sizing: border-box;
@@ -2439,7 +2426,7 @@ html body .eventDetail .detailHeader, html body .eventDetail .detailContent {
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #c8c8c880;
 }
-html body .eventDetail .detailHeader ul .title, html body .eventDetail .detailContent ul .title {
+html body .eventDetail .detailContent ul .title {
   width: 100%;
   height: 25px;
   display: flex;
@@ -2448,41 +2435,44 @@ html body .eventDetail .detailHeader ul .title, html body .eventDetail .detailCo
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #3d4cce;
+  color: #9c8018;
 }
-html body .eventDetail .detailHeader ul .content, html body .eventDetail .detailContent ul .content {
-  display: flex;
+html body .eventDetail .detailContent ul ul {
+  list-style: disc;
+  width: 90%;
+  margin: 0 auto;
 }
-html body .eventDetail .detailHeader ul .content div, html body .eventDetail .detailContent ul .content div {
-  color: #000000;
-  font-weight: bold;
+html body .eventDetail .detailContent ul ul li {
   font-size: 14px;
-}
-html body .eventDetail .detailHeader ul .content div:nth-of-type(1), html body .eventDetail .detailContent ul .content div:nth-of-type(1) {
-  width: 20vw;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 20px;
   color: #4d4d4d;
+  line-height: 18px;
 }
-html body .eventDetail .detailHeader ul .content div:nth-of-type(2), html body .eventDetail .detailContent ul .content div:nth-of-type(2) {
-  width: 62vw;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 15px;
+html body .eventDetail .detailContent ul ul li:nth-of-type(1) {
+  margin-top: 10px;
 }
-html body .eventDetail .detailHeader ul .infoBox p, html body .eventDetail .detailContent ul .infoBox p {
-  font-weight: bold;
+html body .eventDetail .detailContent ul ul li .innerImg {
+  margin-top: 10px;
+}
+html body .eventDetail .detailContent ul ul li ul {
+  list-style: decimal;
+}
+html body .eventDetail .detailContent ul ul li ul li {
   color: #000000;
-  font-size: 14px;
-  line-height: 20px;
+  margin-top: 10px;
 }
-html body .eventDetail .detailHeader .contentFooter, html body .eventDetail .detailContent .contentFooter {
+html body .eventDetail .detailContent ul ul li ul li.sp {
+  color: #e11515;
+}
+html body .eventDetail .detailContent .contentFooter {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0 8px;
+  padding: 20px 0;
 }
 html body .walletWrap {
   width: 100%;
@@ -2494,21 +2484,22 @@ html body .walletWrap {
 html body .walletWrap .walletBox {
   width: 100%;
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   margin-bottom: 10px;
   background: #ffffff;
+  padding-top: 25px;
 }
 html body .walletWrap .walletBox .gradient {
-  background: linear-gradient(to bottom, #3d4cce 0%, #3d4cce 23%, #ffffff 24%, #ffffff 100%);
   width: 100%;
   height: auto;
 }
 html body .walletWrap .walletBox .gradient .content {
   width: 92vw;
   height: auto;
-  margin: 0 auto 16px;
+  margin: 0 auto 30px;
   background: #ffffff;
-  border-radius: 1.5vw;
+  border: solid 1px #957222;
+  border-radius: 5px;
   box-shadow: 0 10px 12px -2px #c8c8c880;
 }
 html body .walletWrap .walletBox .gradient .content .amount {
@@ -2527,7 +2518,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: #4d4d4d;
+  color: #9c8018;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -2545,7 +2536,6 @@ html body .walletWrap .walletBox .gradient .content .details {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #cccccc;
 }
 html body .walletWrap .walletBox .gradient .content .details .items {
   display: flex;
@@ -2603,6 +2593,7 @@ html body .walletWrap .walletList {
   width: 100%;
   height: auto;
   background: #ffffff;
+  margin-bottom: 17px;
 }
 html body .walletWrap .walletList .forPlatform {
   padding-bottom: 15px;
@@ -2628,17 +2619,18 @@ html body .walletWrap .walletList .forPlatform .title {
 html body .walletWrap .walletList .forPlatform .title button {
   width: 18.93vw;
   height: 6.13vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 12px;
 }
 html body .walletWrap .walletList .forPlatform .title button:active, html body .walletWrap .walletList .forPlatform .title button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .walletWrap .walletList .forPlatform ul {
   display: flex;
@@ -2653,12 +2645,12 @@ html body .walletWrap .walletList .forPlatform ul.active {
   max-height: none;
 }
 html body .walletWrap .walletList .forPlatform ul li {
-  width: 30.66vw;
+  width: 29.66vw;
   min-height: 16.53vw;
   box-sizing: border-box;
   padding: 10px 0 0 11px;
-  margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #cccccc;
+  margin: 0 1.9vw 1.9vw 0;
+  border: solid 1px #957222;
   border-radius: 5px;
 }
 html body .walletWrap .walletList .forPlatform ul li:nth-of-type(3n) {
@@ -2692,15 +2684,20 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
   height: auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -30px;
   background: #cca172;
   padding: 6px 18px;
   color: #ffffff;
   border-radius: 3px;
+  font-size: 3vw;
+  position: relative;
   white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
 }
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::before {
   content: "";
@@ -2713,6 +2710,9 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::befo
   border-style: solid;
   border-width: 0 4px 6px 4px;
   border-color: #cca172 transparent;
+}
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner em {
+  color: #ffff00;
 }
 html body .walletWrap .walletList .forPlatform ul li p {
   margin-top: 10px;
@@ -2744,6 +2744,56 @@ html body .walletWrap .walletList .forPlatform .openBtn div .db_arrow {
   height: 12px;
   margin-left: 9px;
   transition: all 0.5s ease;
+}
+html body .walletWrap .options {
+  width: 92vw;
+  height: 50px;
+  margin: 0 auto 17px;
+  border: 1px solid #957222;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 #969696;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0 23px;
+  box-sizing: border-box;
+}
+html body .walletWrap .options p {
+  display: flex;
+  align-items: center;
+  font-size: 3.4vw;
+  font-weight: bold;
+  color: #8a6a3a;
+  letter-spacing: 2px;
+}
+html body .walletWrap .options:active, html body .walletWrap .options.active {
+  border-color: #fff;
+  background: #957222;
+}
+html body .walletWrap .options:active p, html body .walletWrap .options.active p {
+  color: #ffffff;
+}
+html body .walletWrap .options:active .betting_ic, html body .walletWrap .options:active .deal_ic, html body .walletWrap .options.active .betting_ic, html body .walletWrap .options.active .deal_ic {
+  background-position-y: calc(100% - 1px);
+}
+html body .walletWrap .options:active .arrow_ic, html body .walletWrap .options.active .arrow_ic {
+  background-position-y: 100%;
+}
+html body .walletWrap .options .betting_ic, html body .walletWrap .options .deal_ic {
+  display: block;
+  width: 6vw;
+  height: 8vw;
+  margin-right: 4vw;
+}
+html body .walletWrap .options .deal_ic {
+  background-position-x: 100%;
+}
+html body .walletWrap .options .arrow_ic {
+  display: block;
+  width: 2vw;
+  height: 3.4vw;
+  transform: scaleX(-1);
 }
 html body .memberWrap {
   width: 100%;
@@ -2802,18 +2852,19 @@ html body .memberWrap .user .info div .date {
 html body .memberWrap .user .info .infoBtn {
   width: auto;
   height: auto;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 14px;
   padding: 3px 15px;
 }
 html body .memberWrap .user .info .infoBtn:active, html body .memberWrap .user .info .infoBtn.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .memberWrap .user .wallet {
   display: flex;
@@ -2825,7 +2876,7 @@ html body .memberWrap .user .wallet p {
   height: 8.27vw;
   background: #f2f3f3;
   color: #4d4d4d;
-  border-color: #cca172;
+  border-color: #957222;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -2840,18 +2891,19 @@ html body .memberWrap .user .wallet p {
 html body .memberWrap .user .wallet button {
   width: 27.73vw;
   height: 8.27vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   border-radius: 0 5vw 5vw 0;
   font-size: 15px;
 }
 html body .memberWrap .user .wallet button:active, html body .memberWrap .user .wallet button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .memberWrap .user .btnBox {
   display: flex;
@@ -2861,10 +2913,10 @@ html body .memberWrap .user .btnBox {
   justify-content: space-between;
 }
 html body .memberWrap .user .btnBox button {
-  width: 100%;
+  width: 49%;
   height: 18.4vw;
   background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2880,12 +2932,18 @@ html body .memberWrap .user .btnBox button .wallet_ic {
   width: 8.8vw;
   height: 8.8vw;
 }
+html body .memberWrap .user .btnBox button .vip_ic {
+  display: block;
+  width: 8.8vw;
+  height: 8.8vw;
+  background-position-x: 100%;
+}
 html body .memberWrap .user .btnBox button .text {
   margin-left: 3.47vw;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4d4d4d;
+  color: #9c8018;
 }
 html body .memberWrap .user .btnBox button .text p {
   font-size: 12px;
@@ -2913,6 +2971,15 @@ html body .memberWrap .user ul li i {
   width: 10.4vw;
   height: 9.33vw;
 }
+html body .memberWrap .user ul li i.deal_ic {
+  background-position-x: -10.4vw;
+}
+html body .memberWrap .user ul li i.mail_ic {
+  background-position-x: -20.8vw;
+}
+html body .memberWrap .user ul li i.card_ic {
+  background-position-x: -31.2vw;
+}
 html body .memberWrap .user ul li p {
   font-size: 13px;
   font-weight: bold;
@@ -2925,7 +2992,7 @@ html body .memberWrap .user ul li .bubble {
   min-height: 20px;
   top: -7px;
   right: 10px;
-  background: #cca172;
+  background: #e11515;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -2937,42 +3004,77 @@ html body .memberWrap .user ul li .bubble {
   position: absolute;
 }
 html body .memberWrap .options {
-  width: 100%;
+  width: 92vw;
   height: 50px;
-  box-sizing: border-box;
-  padding: 0 14px 0 23px;
+  margin: 0 auto 17px;
+  border: 1px solid #957222;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 #969696;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffff;
-  margin-bottom: 10px;
+  padding: 0 14px 0 23px;
+  box-sizing: border-box;
 }
-html body .memberWrap .options.opLang p {
-  display: none;
-}
-html body .memberWrap .options.opLang p.active {
-  display: block;
-}
-html body .memberWrap .options div {
+html body .memberWrap .options p {
   display: flex;
   align-items: center;
-}
-html body .memberWrap .options div i {
-  display: block;
-  margin-right: 18px;
-  width: 5.6vw;
-  height: 5.6vw;
-}
-html body .memberWrap .options div p {
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 3.4vw;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #8a6a3a;
+  letter-spacing: 2px;
+}
+html body .memberWrap .options:active, html body .memberWrap .options.active {
+  border-color: #fff;
+  background: #957222;
+}
+html body .memberWrap .options:active p, html body .memberWrap .options.active p {
+  color: #ffffff;
+}
+html body .memberWrap .options.opLang span {
+  display: none;
+}
+html body .memberWrap .options.opLang span.active {
+  display: block;
+}
+html body .memberWrap .options:active i, html body .memberWrap .options.active i {
+  background-position-y: 100%;
+}
+html body .memberWrap .options:active i.point_ic, html body .memberWrap .options.active i.point_ic {
+  background-position-y: calc(100% - 1px);
+}
+html body .memberWrap .options i {
+  display: block;
+  margin-right: 2vw;
+  width: 8vw;
+  height: 8vw;
+}
+html body .memberWrap .options i.point_ic {
+  width: 6vw;
+  height: 8vw;
+  background-position-x: 100%;
+  margin: 0 3vw 0 1vw;
+}
+html body .memberWrap .options i.help_ic {
+  background-position-x: -8vw;
+}
+html body .memberWrap .options i.about_ic {
+  background-position-x: -16vw;
+}
+html body .memberWrap .options i.app_ic {
+  background-position-x: -32vw;
+}
+html body .memberWrap .options i.lang_ic {
+  background-position-x: -40vw;
+}
+html body .memberWrap .options i.logout_ic {
+  background-position-x: -48vw;
 }
 html body .memberWrap .options .arrow_ic {
   display: block;
-  width: 1.7vw;
-  height: 3.2vw;
+  width: 2vw;
+  height: 3.4vw;
   transform: scaleX(-1);
 }
 html body .memberList {
@@ -2998,8 +3100,8 @@ html body .memberList ul li {
   color: #848484;
 }
 html body .memberList ul li:active, html body .memberList ul li.active {
-  color: #3d4cce;
-  border-color: #3d4cce;
+  color: #c7a16e;
+  border-color: #c7a16e;
 }
 html body .memberInfo {
   overflow-y: auto;
@@ -3068,17 +3170,17 @@ html body .memberInfo form ul li input::placeholder {
 }
 html body .memberInfo form ul li input.active {
   background: #ffffff;
-  border-color: #cccccc;
+  border-color: #957222;
   padding-right: 8px;
   border-radius: 5px;
 }
 html body .memberInfo form ul li button {
   display: none;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   width: 100%;
@@ -3086,23 +3188,25 @@ html body .memberInfo form ul li button {
   margin-bottom: 2px;
 }
 html body .memberInfo form ul li button:active, html body .memberInfo form ul li button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .memberInfo form ul .saveBtn {
   display: block;
   width: 92vw;
   height: 42px;
   margin: 12px auto 0;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .memberInfo form ul .saveBtn:active, html body .memberInfo form ul .saveBtn.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .memberInfo .info_1, html body .memberInfo .info_2 {
   width: 100%;
@@ -3131,6 +3235,13 @@ html body .memberInfo .info_1 ul li, html body .memberInfo .info_2 ul li {
   justify-content: space-between;
   border-bottom: solid 1px #cccccc;
 }
+html body .memberInfo .info_1 ul li.forQR, html body .memberInfo .info_2 ul li.forQR {
+  height: auto;
+  padding: 10px 17px;
+}
+html body .memberInfo .info_1 ul li.forQR span:nth-of-type(1), html body .memberInfo .info_2 ul li.forQR span:nth-of-type(1) {
+  width: auto;
+}
 html body .memberInfo .info_1 ul li span, html body .memberInfo .info_2 ul li span {
   font-size: 14px;
   font-weight: bold;
@@ -3150,10 +3261,10 @@ html body .memberInfo .info_1 ul li span .copy, html body .memberInfo .info_2 ul
   width: 47px;
   height: 29px;
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
   margin-left: 15px;
 }
@@ -3174,16 +3285,20 @@ html body .memberInfo .info_1 ul li span .changePhoneBtn, html body .memberInfo 
 }
 html body .memberInfo .info_1 ul li span .changePhoneBtn i, html body .memberInfo .info_1 ul li span .changePwdBtn i, html body .memberInfo .info_2 ul li span .changePhoneBtn i, html body .memberInfo .info_2 ul li span .changePwdBtn i {
   display: block;
-  width: 9px;
-  height: 16px;
+  width: 2vw;
+  height: 3.4vw;
   transform: scaleX(-1);
   margin-left: 8px;
+}
+html body .memberInfo .info_1 ul li .qrCode, html body .memberInfo .info_2 ul li .qrCode {
+  width: 100px;
+  height: 100px;
 }
 html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul li .security {
   width: 100%;
   height: 40px;
-  background: #f7f8ff;
-  border: solid 1px #aeb6fd;
+  background: #fffcf5;
+  border: solid 1px #ffe5cd;
   color: #4d4d4d;
   font-size: 14px;
   display: flex;
@@ -3218,7 +3333,7 @@ html body .memberPlatform .platformBox {
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   border-radius: 5px;
   background: #ffffff;
   margin-bottom: 10px;
@@ -3226,10 +3341,10 @@ html body .memberPlatform .platformBox {
 html body .memberPlatform .platformBox .title {
   width: 100%;
   height: 38px;
-  border-bottom: solid 1px #3d4cce;
+  border-bottom: solid 1px #cccccc;
   box-sizing: border-box;
   padding: 0 17px;
-  color: #3d4cce;
+  color: #9c8018;
   font-size: 14px;
   font-weight: bold;
   display: flex;
@@ -3262,10 +3377,10 @@ html body .memberPlatform .platformBox .content li p button {
   height: 28px;
   margin-left: 10px;
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
 }
 html body .memberPlatform .platformBox .content li p button.un {
@@ -3299,16 +3414,17 @@ html body .helpWrap .helpHeader .selectBox {
   box-shadow: 0 0 13px 2px #dedede;
   position: relative;
   border-radius: 5px;
+  border: solid 1px #957222;
 }
 html body .helpWrap .helpHeader .selectBox p {
-  color: #3d4cce;
+  color: #9c8018;
   font-size: 14px;
   font-weight: bold;
 }
 html body .helpWrap .helpHeader .selectBox .arrow_ic {
   display: block;
-  width: 9px;
-  height: 16px;
+  width: 2vw;
+  height: 3.4vw;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(270deg);
@@ -3350,13 +3466,13 @@ html body .helpWrap .helpBody ul li {
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
+  color: #4d4d4d;
+  border: solid 1px #957222;
 }
 html body .helpInner {
   display: none;
   width: 100%;
   height: calc(100vh - 94px);
-  background: #f2f3f3;
   overflow-y: auto;
 }
 html body .helpInner.display {
@@ -3391,6 +3507,7 @@ html body .helpInner ul li .title {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  border: solid 1px #957222;
 }
 html body .helpInner ul li .title .icon {
   display: block;
@@ -3401,8 +3518,8 @@ html body .helpInner ul li .title .icon {
 }
 html body .helpInner ul li .title .arrow_ic {
   display: block;
-  width: 9px;
-  height: 16px;
+  width: 2vw;
+  height: 3.4vw;
   margin: 0 4vw;
   flex-shrink: 0;
   transform: rotate(180deg);
@@ -3412,7 +3529,7 @@ html body .helpInner ul li .title p {
   width: 100%;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
+  color: #9c8018;
 }
 html body .helpInner ul li .textBox {
   display: none;
@@ -3421,6 +3538,14 @@ html body .helpInner ul li .textBox {
   box-sizing: border-box;
   padding: 10px;
   margin: 0 auto;
+  border: solid 1px #957222;
+  border-top: none;
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+html body .helpInner ul li .textBox.app {
+  background: none;
+  border: none;
 }
 html body .helpInner ul li .textBox p {
   line-height: 22px;
@@ -3430,9 +3555,10 @@ html body .helpInner ul li .textBox p {
   margin-bottom: 8px;
 }
 html body .helpInner ul li .textBox p.smallTitle {
-  font-size: 18px;
+  font-size: 22px;
   margin: 20px 0 10px;
   color: #4d4d4d;
+  text-align: center;
 }
 html body .helpInner ul li .textBox p.smallTitle.first {
   margin-top: 0;
@@ -3441,13 +3567,14 @@ html body .helpInner ul li .textBox p.platform {
   font-size: 18px;
   color: #4d4d4d;
   margin: 15px 0;
+  text-align: center;
 }
 html body .helpInner ul li .textBox p.platform .downloadBtn {
   width: 144px;
   margin-left: 10px;
 }
 html body .helpInner ul li .textBox p a {
-  color: #cca172;
+  color: #af8c50;
   text-decoration: none;
 }
 html body .helpInner ul li .textBox .img {
@@ -3472,15 +3599,21 @@ html body .helpInner ul li .textBox .btnBox {
 }
 html body .helpInner ul li .textBox .btnBox div {
   width: 100%;
-  height: auto;
+  height: 105px;
   position: relative;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: solid 1px #00b900;
+  box-shadow: 3px 3px 3px 0 #c5c5c5;
   display: flex;
   box-sizing: border-box;
-  padding: 15px 15px 15px 18vw;
-  border-radius: 5px;
+  padding: 25px 15px 25px 18vw;
+  border-radius: 15px;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 15px;
+}
+html body .helpInner ul li .textBox .btnBox div p {
+  color: #00b900;
 }
 html body .helpInner ul li .textBox .btnBox div i {
   display: block;
@@ -3496,33 +3629,23 @@ html body .helpInner ul li .textBox .btnBox div p {
   font-weight: bold;
   margin: 0;
 }
-html body .helpInner ul li .textBox .btnBox div:nth-of-type(1) {
-  background: #ffffff;
-  border: solid 2px #ad8074;
-}
-html body .helpInner ul li .textBox .btnBox div:nth-of-type(1) p {
-  color: #ad8074;
-}
-html body .helpInner ul li .textBox .btnBox div:nth-of-type(2) {
-  background: #ffffff;
-  border: solid 2px #00b900;
-}
-html body .helpInner ul li .textBox .btnBox div:nth-of-type(2) p {
-  color: #00b900;
+html body .helpInner ul li .textBox .btnBox div p:nth-of-type(1) {
+  font-size: 5vw;
 }
 html body .helpInner ul li .textBox .downloadBtn {
   width: 100%;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .helpInner ul li .textBox .downloadBtn:active, html body .helpInner ul li .textBox .downloadBtn.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .eventApplyType {
   width: 100%;
@@ -3551,8 +3674,8 @@ html body .eventApplyType ul li {
   color: #848484;
 }
 html body .eventApplyType ul li:active, html body .eventApplyType ul li.active {
-  border-color: #3d4cce;
-  color: #3d4cce;
+  border-color: #c7a16e;
+  color: #c7a16e;
 }
 html body .applyList {
   display: none;
@@ -3575,7 +3698,7 @@ html body .applyList .listBox .list {
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0 0 13px 2px #dedede;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   background: #ffffff;
 }
 html body .applyList .listBox .list .title {
@@ -3584,34 +3707,33 @@ html body .applyList .listBox .list .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid 1px #3d4cce;
-  color: #3d4cce;
+  border-bottom: solid 1px #cccccc;
+  color: #9c8018;
   font-size: 16px;
   font-weight: bold;
 }
 html body .applyList .listBox .list .tips {
   display: none;
   width: 56vw;
-  border-radius: 5px;
   margin: 6px auto 0;
   background: #cca172;
-  box-sizing: border-box;
-  padding: 7px 0;
-  text-align: center;
+  padding: 6px 18px;
   color: #ffffff;
-  font-weight: bold;
+  border-radius: 3px;
   font-size: 3vw;
   position: relative;
-}
-html body .applyList .listBox .list .tips.display {
-  display: block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  padding: 7px 0;
 }
 html body .applyList .listBox .list .tips::before {
   content: "";
   position: absolute;
-  top: -6px;
   left: 50%;
   transform: translateX(-50%);
+  top: -6px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -3620,6 +3742,11 @@ html body .applyList .listBox .list .tips::before {
 }
 html body .applyList .listBox .list .tips em {
   color: #ffff00;
+}
+html body .applyList .listBox .list .tips.display {
+  display: block;
+}
+html body .applyList .listBox .list .tips em {
   margin-right: 5px;
 }
 html body .applyList .listBox .list ul {
@@ -3639,11 +3766,16 @@ html body .applyList .listBox .list ul li {
   align-items: center;
 }
 html body .applyList .listBox .list ul li.cur {
-  background: #f7f8ff;
+  background: #ece2ca;
+}
+html body .applyList .listBox .list ul li label {
+  flex-shrink: 0;
+  width: 35%;
 }
 html body .applyList .listBox .list ul li p {
   font-size: 13px;
   color: #000000;
+  line-height: 18px;
 }
 html body .applyList .listBox .list ul li p em {
   color: #e11515;
@@ -3664,24 +3796,25 @@ html body .applyList .listBox .list .btnBox button {
   height: 32px;
 }
 html body .applyList .listBox .list .btnBox button.applyBtn {
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 16px;
 }
 html body .applyList .listBox .list .btnBox button.applyBtn:active, html body .applyList .listBox .list .btnBox button.applyBtn.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .applyList .listBox .list .btnBox button.checkBtn {
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
   font-size: 16px;
 }
@@ -3735,18 +3868,18 @@ html body .applyRecord .searchContain form ul li select {
   font-size: 15px;
   font-weight: bold;
   color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #3d4cce 0), linear-gradient(135deg, #3d4cce 50%, transparent 0);
+  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   padding-left: 15px;
 }
 html body .applyRecord .searchContain form ul li .inputBox {
   width: 100%;
   height: 42px;
   border-radius: 5px;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -3772,10 +3905,10 @@ html body .applyRecord .searchContain form ul li .btnBox {
 html body .applyRecord .searchContain form ul li .btnBox button {
   width: 25%;
   height: 38px;
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  background: linear-gradient(to top, #d7d7d7 0%, #ffffff 58%, #ffffff 100%);
   font-size: 4vw;
   color: #848484;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3783,9 +3916,8 @@ html body .applyRecord .searchContain form ul li .btnBox button {
   flex-shrink: 0;
 }
 html body .applyRecord .searchContain form ul li .btnBox button:active, html body .applyRecord .searchContain form ul li .btnBox button.active {
-  background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
   color: #ffffff;
-  border-color: #cca172;
 }
 html body .applyRecord .searchContain form ul li .btnBox button:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -3799,16 +3931,17 @@ html body .applyRecord .searchContain form ul li.bigBtn {
 html body .applyRecord .searchContain form ul li.bigBtn button {
   width: 100%;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .applyRecord .searchContain form ul li.bigBtn button:active, html body .applyRecord .searchContain form ul li.bigBtn button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .applyRecord .reviewBody {
   width: 100%;
@@ -3838,6 +3971,7 @@ html body .applyRecord .reviewBody .recordBox {
   background: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #c8c8c880;
+  border: solid 1px #957222;
 }
 html body .applyRecord .reviewBody .recordBox.display {
   display: block;
@@ -3854,10 +3988,10 @@ html body .applyRecord .reviewBody .recordBox ul .title {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 20px;
-  border-bottom: solid 2px #3d4cce;
+  border-bottom: solid 1px #cccccc;
 }
 html body .applyRecord .reviewBody .recordBox ul .title p {
-  color: #3d4cce;
+  color: #9c8018;
   font-weight: bold;
   font-size: 14px;
 }
@@ -3890,6 +4024,491 @@ html body .applyRecord .reviewBody .recordBox ul ul li p {
 html body .applyRecord .reviewBody .recordBox ul ul li p:last-child {
   color: #000000;
 }
+html body .vipWrap {
+  width: 100%;
+  height: calc(100vh - 94px);
+  overflow-y: auto;
+  background: #f2f3f3;
+}
+html body .vipWrap .topBox {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  background: #ffffff;
+}
+html body .vipWrap .topBox .board {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 4vw 7.46vw;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 0 13px 2px #dedede;
+  background: #ffffff;
+  margin-bottom: 6.66vw;
+}
+html body .vipWrap .topBox .board .content {
+  position: relative;
+  padding-top: 12px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 13.33vw;
+}
+html body .vipWrap .topBox .board .content .account {
+  font-size: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #9c8018;
+}
+html body .vipWrap .topBox .board .content .textBox {
+  margin-bottom: 12px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+html body .vipWrap .topBox .board .content .textBox span {
+  font-size: 14px;
+  color: #000000;
+}
+html body .vipWrap .topBox .board .content .medal {
+  width: 22.93vw;
+  height: 30.13vw;
+  position: absolute;
+  top: 0;
+  right: 5.6vw;
+}
+html body .vipWrap .topBox .board .exBar {
+  width: 100%;
+  height: auto;
+}
+html body .vipWrap .topBox .board .exBar .level {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+html body .vipWrap .topBox .board .exBar .level p {
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+html body .vipWrap .topBox .board .exBar .level p.cur {
+  color: #9c8018;
+}
+html body .vipWrap .topBox .board .exBar .bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+html body .vipWrap .topBox .board .exBar .bar .cur {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  border-radius: 4px;
+  background: #d3b47b;
+}
+html body .vipWrap .topBox .levelBox {
+  width: 92vw;
+  height: 5.33vw;
+  margin: 0 auto;
+  position: relative;
+}
+html body .vipWrap .topBox .levelBox div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+html body .vipWrap .topBox .levelBox div hr {
+  width: 100%;
+  border: solid 1px #cccccc;
+}
+html body .vipWrap .topBox .levelBox ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+html body .vipWrap .topBox .levelBox ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 10.66vw;
+  height: 100%;
+  margin-right: 10.99vw;
+  background: #cccccc;
+  border-radius: 3vw;
+  font-size: 13px;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding-bottom: 2px;
+}
+html body .vipWrap .topBox .levelBox ul li.cur {
+  background: linear-gradient(to bottom, #f7eeba 0%, #bf9d5f 50%, #eed6af 100%);
+}
+html body .vipWrap .topBox .levelBox ul li:last-child {
+  margin: 0;
+}
+html body .vipWrap .topBox .cardBox {
+  width: 100%;
+  height: 47.46vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 1vw;
+  margin-top: 5.33vw;
+}
+html body .vipWrap .topBox .cardBox i {
+  display: block;
+  width: 2vw;
+  height: 3.4vw;
+}
+html body .vipWrap .topBox .cardBox i.next {
+  transform: scaleX(-1);
+}
+html body .vipWrap .topBox .cardBox .card {
+  width: 87.27vw;
+  height: 47.46vw;
+  overflow-x: auto;
+}
+html body .vipWrap .topBox .cardBox .card ul {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+html body .vipWrap .topBox .cardBox .card ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 87.27vw;
+  height: 47.46vw;
+  box-sizing: border-box;
+  padding: 0 6.67vw;
+}
+html body .vipWrap .topBox .cardBox .card ul li .medal {
+  position: absolute;
+  top: 0;
+  left: 5.6vw;
+  width: 19.47vw;
+  height: 25.87vw;
+}
+html body .vipWrap .topBox .cardBox .card ul li .textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6.4vw;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 2px 3px #000000;
+}
+html body .vipWrap .topBox .cardBox .card ul li .textBox p {
+  margin-top: 2.4vw;
+  font-size: 18px;
+}
+html body .vipWrap .enjoyBox {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 15px 12px 12px;
+  margin: 10px 0;
+  background: #ffffff;
+}
+html body .vipWrap .enjoyBox .title {
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #9c8018;
+  box-sizing: border-box;
+  padding-left: 1vw;
+}
+html body .vipWrap .enjoyBox ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+html body .vipWrap .enjoyBox ul li {
+  width: 45.4vw;
+  min-height: 51px;
+  height: auto;
+  padding: 6px 12px;
+  margin: 0 1.6vw 1.6vw 0;
+  border: solid 1px #957222;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #4d4d4d;
+  box-sizing: border-box;
+}
+html body .vipWrap .enjoyBox ul li:nth-of-type(2n) {
+  margin-right: 0;
+}
+html body .vipWrap .enjoyBox ul li p {
+  font-size: 22px;
+  color: #000000;
+  margin-top: 8px;
+}
+html body .vipWrap .enjoyBox ul s {
+  width: 45.33vw;
+}
+html body .vipWrap .checkBtn {
+  width: 92%;
+  height: 50px;
+  border: 1px solid #957222;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 #969696;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0 23px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto 10px;
+}
+html body .vipWrap .checkBtn p {
+  display: flex;
+  align-items: center;
+  font-size: 3.4vw;
+  font-weight: bold;
+  color: #8a6a3a;
+  letter-spacing: 2px;
+}
+html body .vipWrap .checkBtn:active, html body .vipWrap .checkBtn.active {
+  border-color: #fff;
+  background: #957222;
+}
+html body .vipWrap .checkBtn:active p, html body .vipWrap .checkBtn.active p {
+  color: #ffffff;
+}
+html body .vipWrap .checkBtn .arrow_ic {
+  display: block;
+  width: 2vw;
+  height: 3.4vw;
+  transform: scaleX(-1);
+}
+html body .vipDetail {
+  width: 100%;
+  height: calc(100vh - 94px);
+  overflow-y: auto;
+  padding: 5px 0;
+}
+html body .vipDetail .lvWrap {
+  margin: 10px 0;
+  padding: 5px 18px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+}
+html body .vipDetail .lvWrap:last-child {
+  margin-bottom: 0;
+}
+html body .vipDetail .lvWrap .title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #9c8018;
+  margin: 7px 0 12px;
+}
+html body .vipDetail .lvWrap .list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-shadow: 0 0 5px 0 #c8c8c880;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+  border: solid 1px #957222;
+}
+html body .vipDetail .lvWrap .list i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+}
+html body .vipDetail .lvWrap .list i.prev {
+  left: 19vw;
+}
+html body .vipDetail .lvWrap .list i.prev::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 14px;
+  z-index: 1;
+}
+html body .vipDetail .lvWrap .list i.next {
+  right: 1vw;
+}
+html body .vipDetail .lvWrap .list i.next::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 14px;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+html body .vipDetail .lvWrap .list .left {
+  width: 20%;
+  height: auto;
+}
+html body .vipDetail .lvWrap .list .left li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+html body .vipDetail .lvWrap .list .left li:nth-of-type(2n) {
+  background: #f7ede1;
+}
+html body .vipDetail .lvWrap .list .left li.smallTitle {
+  border-bottom: solid 1px #cccccc;
+}
+html body .vipDetail .lvWrap .list .left li.smallTitle p {
+  color: #4d4d4d;
+}
+html body .vipDetail .lvWrap .list .left li p {
+  width: 100%;
+  box-sizing: border-box;
+  border-right: solid 1px #cccccc;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+}
+html body .vipDetail .lvWrap .list .right {
+  width: 80%;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+}
+html body .vipDetail .lvWrap .list .right ul {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+html body .vipDetail .lvWrap .list .right ul:last-child li p {
+  border: none;
+}
+html body .vipDetail .lvWrap .list .right ul li {
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+html body .vipDetail .lvWrap .list .right ul li:nth-of-type(2n) {
+  background: #f7ede1;
+}
+html body .vipDetail .lvWrap .list .right ul li.smallTitle {
+  border-bottom: solid 1px #cccccc;
+}
+html body .vipDetail .lvWrap .list .right ul li.smallTitle p {
+  color: #4d4d4d;
+}
+html body .vipDetail .lvWrap .list .right ul li p {
+  width: 100%;
+  box-sizing: border-box;
+  border-right: solid 1px #cccccc;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+html body .vipDetail .lvWrap .list .finger {
+  display: block;
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  right: 4vw;
+  bottom: 2vw;
+  animation: disappear 4s ease 0s infinite;
+}
+html body .vipDetail .lvWrap .list .finger::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -20%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #e11515;
+  border-width: 6px 8px 6px 0;
+  animation: moveL 2s ease 0s infinite;
+}
+html body .vipDetail .lvWrap .list .finger::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 12%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #e11515;
+  border-width: 6px 0 6px 8px;
+  animation: moveR 2s ease 0s infinite;
+}
+@keyframes disappear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes moveL {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-140%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveR {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 html body .topList {
   width: 100%;
   height: auto;
@@ -3913,8 +4532,8 @@ html body .topList ul li {
   color: #848484;
 }
 html body .topList ul li.active {
-  color: #3d4cce;
-  border-color: #3d4cce;
+  color: #c7a16e;
+  border-color: #c7a16e;
 }
 html body .mailBody.normal {
   display: none;
@@ -3947,8 +4566,9 @@ html body .mailBody.normal .subClass ul li {
   justify-content: center;
 }
 html body .mailBody.normal .subClass ul li:active, html body .mailBody.normal .subClass ul li.active {
+  border-color: #957222;
   color: #ffffff;
-  background: linear-gradient(to top, #3178ff 0%, #784dff 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
 }
 html body .mailBody.normal .subClass ul li:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -3983,7 +4603,7 @@ html body .mailBody.normal .editBox .all input::before {
   position: absolute;
   width: 19px;
   height: 19px;
-  border: solid 1px #3d4cce;
+  border: solid 1px #957222;
   background: #ffffff;
   border-radius: 50%;
   top: 50%;
@@ -3996,7 +4616,7 @@ html body .mailBody.normal .editBox .all input:checked::after {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #3d4cce;
+  background: #957222;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -4057,10 +4677,11 @@ html body .mailBody.normal .mailBox ul li {
   width: 100%;
   height: 108px;
   margin-bottom: 10px;
-  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
-  border: solid 1px #cccccc;
+  background: #ffffff;
+  border: solid 1px #957222;
   border-radius: 5px;
   position: relative;
+  box-shadow: 0 2px 5px 0 #c3c3c3;
 }
 html body .mailBody.normal .mailBox ul li.read {
   background: #f2f3f3;
@@ -4127,7 +4748,7 @@ html body .mailBody.normal .mailBox ul li .inputBox input::before {
   position: absolute;
   width: 19px;
   height: 19px;
-  border: solid 1px #3d4cce;
+  border: solid 1px #957222;
   background: #ffffff;
   border-radius: 50%;
   top: 50%;
@@ -4140,7 +4761,7 @@ html body .mailBody.normal .mailBox ul li .inputBox input:checked::after {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #3d4cce;
+  background: #957222;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -4177,8 +4798,9 @@ html body .mailBody.post .subClass ul li {
   justify-content: center;
 }
 html body .mailBody.post .subClass ul li:active, html body .mailBody.post .subClass ul li.active {
+  border-color: #957222;
   color: #ffffff;
-  background: linear-gradient(to top, #3178ff 0%, #784dff 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
 }
 html body .mailBody.post .subClass ul li:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -4200,32 +4822,65 @@ html body .mailBody.post .mailBox.hot.display, html body .mailBody.post .mailBox
 html body .mailBody.post .mailBox ul {
   width: 100%;
   height: auto;
+  box-sizing: border-box;
+  padding: 15px 4%;
 }
 html body .mailBody.post .mailBox ul li {
   width: 100%;
   height: auto;
-  box-sizing: border-box;
-  padding: 15px;
-  border-bottom: solid 1px #cccccc;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: solid 1px #957222;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 2px 5px 0 #c3c3c3;
+}
+html body .mailBody.post .mailBox ul li.read {
+  background: #f2f3f3;
+}
+html body .mailBody.post .mailBox ul li.read .title {
+  color: #b3b3b3;
+}
+html body .mailBody.post .mailBox ul li.read .textBox p, html body .mailBody.post .mailBox ul li.read .textBox .date {
+  color: #b3b3b3;
 }
 html body .mailBody.post .mailBox ul li p {
   width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 14px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30px;
+  font-size: 16px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   color: #4d4d4d;
 }
 html body .mailContent {
-  width: 100%;
-  height: calc(100vh - 96px);
+  width: 90%;
+  height: calc(100vh - 125px);
   overflow-y: auto;
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 10vw 15px;
+  border-radius: 10px;
+  margin: 15px auto;
+  box-shadow: 0 2px 4px 0 #dedede;
+  position: relative;
+  background: #ffffff;
+  border: solid 1px #957222;
+}
+html body .mailContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vw;
+  border-radius: 10px 10px 0 0;
+  background: #e0c38d;
 }
 html body .mailContent .title {
-  margin-bottom: 19px;
+  margin: 20px 0;
   font-size: 17px;
   font-weight: bold;
   color: #4d4d4d;
@@ -4352,7 +5007,7 @@ html body .cardContent ul li input {
   width: 100%;
   height: 42px;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -4375,23 +5030,23 @@ html body .cardContent ul button {
   width: 100%;
   height: 42px;
   margin: 25px 0;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .cardContent ul button:active, html body .cardContent ul button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .bettingWrap {
   width: 100%;
   height: calc(100vh - 95px);
   background: #f2f3f3;
   overflow-y: auto;
-  padding-top: 10px;
   box-sizing: border-box;
 }
 html body .bettingWrap .searchContent {
@@ -4423,7 +5078,7 @@ html body .bettingWrap .searchContent .top .helf button {
   height: 42px;
   background: #ffffff;
   border-radius: 3px;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   color: #000000;
   font-size: 16px;
   padding: 0 15px;
@@ -4439,7 +5094,7 @@ html body .bettingWrap .searchContent .top .helf button i {
   height: 0;
   border-style: solid;
   border-width: 6px 4px 0 4px;
-  border-color: #3d4cce transparent;
+  border-color: #957222 transparent;
 }
 html body .bettingWrap .searchContent .top .full {
   width: 100%;
@@ -4454,7 +5109,7 @@ html body .bettingWrap .searchContent .top .full p {
 html body .bettingWrap .searchContent .top .full .inputBox {
   width: 100%;
   height: 42px;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -4487,11 +5142,11 @@ html body .bettingWrap .searchContent .top .full .selectBox select {
   font-size: 15px;
   font-weight: bold;
   color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #3d4cce 0), linear-gradient(135deg, #3d4cce 50%, transparent 0);
+  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   padding-left: 15px;
 }
 html body .bettingWrap .searchContent .date {
@@ -4503,10 +5158,10 @@ html body .bettingWrap .searchContent .date {
 html body .bettingWrap .searchContent .date button {
   width: 25%;
   height: 38px;
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  background: linear-gradient(to top, #d7d7d7 0%, #ffffff 58%, #ffffff 100%);
   font-size: 4vw;
   color: #848484;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4514,9 +5169,8 @@ html body .bettingWrap .searchContent .date button {
   flex-shrink: 0;
 }
 html body .bettingWrap .searchContent .date button:active, html body .bettingWrap .searchContent .date button.active {
-  background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
+  background: linear-gradient(to top, #dfc88b 0%, #b79451 100%);
   color: #ffffff;
-  border-color: #cca172;
 }
 html body .bettingWrap .searchContent .date button:nth-of-type(1) {
   border-radius: 5px 0 0 5px;
@@ -4527,16 +5181,17 @@ html body .bettingWrap .searchContent .date button:last-child {
 html body .bettingWrap .searchContent .check {
   width: 100%;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .bettingWrap .searchContent .check:active, html body .bettingWrap .searchContent .check.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .bettingWrap .list {
   width: 100%;
@@ -4563,7 +5218,7 @@ html body .bettingWrap .list .recordBox {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   background: #ffffff;
   margin-bottom: 10px;
 }
@@ -4573,8 +5228,8 @@ html body .bettingWrap .list .recordBox.display {
 html body .bettingWrap .list .recordBox .title {
   width: 100%;
   height: 38px;
-  border-bottom: solid 1px #3d4cce;
-  color: #3d4cce;
+  border-bottom: solid 1px #cccccc;
+  color: #9c8018;
   font-size: 14px;
   font-weight: bold;
   display: flex;
@@ -4586,6 +5241,16 @@ html body .bettingWrap .list .recordBox .title {
 html body .bettingWrap .list .recordBox .title .date {
   font-size: 13px;
   color: #848484;
+}
+html body .bettingWrap .list .recordBox .title button {
+  width: 80px;
+  height: 26px;
+  background: #ffffff;
+  border: solid 1px #a7854d;
+  font-size: 13px;
+  font-weight: bold;
+  color: #a7854d;
+  border-radius: 3px;
 }
 html body .bettingWrap .list .recordBox ul {
   width: 100%;
@@ -4642,8 +5307,8 @@ html body .recordTop ul li {
   color: #848484;
 }
 html body .recordTop ul li.active {
-  color: #3d4cce;
-  border-color: #3d4cce;
+  color: #c7a16e;
+  border-color: #c7a16e;
 }
 html body .waterBox {
   width: 100%;
@@ -4674,7 +5339,7 @@ html body .waterBox ul li {
   height: auto;
   border-radius: 5px;
   background: #ffffff;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   margin-bottom: 10px;
 }
 html body .waterBox ul li p {
@@ -4689,8 +5354,8 @@ html body .waterBox ul li p {
   font-size: 14px;
 }
 html body .waterBox ul li p.title {
-  color: #3d4cce;
-  border-bottom: solid 1px #3d4cce;
+  color: #9c8018;
+  border-bottom: solid 1px #cccccc;
 }
 html body .waterBox ul li p span {
   font-size: 14px;
@@ -4708,8 +5373,8 @@ html body .waterBox ul li p span.sp {
 html body .waterBox ul li .remindBox {
   width: calc(100% - 28px);
   height: 42px;
-  background: #f7f8ff;
-  border: solid 1px #aeb6fd;
+  background: #fffcf5;
+  border: solid 1px #ffe5cd;
   color: #4d4d4d;
   font-size: 14px;
   display: flex;
@@ -4745,286 +5410,26 @@ html body .waterBox ul li .btnBox button {
 }
 html body .waterBox ul li .btnBox button:nth-of-type(1) {
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
   font-size: 14px;
 }
 html body .waterBox ul li .btnBox button:last-child {
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 14px;
 }
 html body .waterBox ul li .btnBox button:last-child:active, html body .waterBox ul li .btnBox button:last-child.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-}
-html body .walletWrap {
-  width: 100%;
-  min-height: calc(100vh - 92px);
-  height: auto;
-  background: #f2f3f3;
-  padding-bottom: 10px;
-}
-html body .walletWrap .walletBox {
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
-  background: #ffffff;
-}
-html body .walletWrap .walletBox .gradient {
-  background: linear-gradient(to bottom, #3d4cce 0%, #3d4cce 23%, #ffffff 24%, #ffffff 100%);
-  width: 100%;
-  height: auto;
-}
-html body .walletWrap .walletBox .gradient .content {
-  width: 92vw;
-  height: auto;
-  margin: 0 auto 16px;
-  background: #ffffff;
-  border-radius: 1.5vw;
-  box-shadow: 0 10px 12px -2px #c8c8c880;
-}
-html body .walletWrap .walletBox .gradient .content .amount {
-  width: 100%;
-  height: auto;
-  display: flex;
-  border-bottom: solid 1px #cccccc;
-}
-html body .walletWrap .walletBox .gradient .content .amount .half {
-  width: 50%;
-  height: auto;
-  box-sizing: border-box;
-  padding: 12px 0 12px 15px;
-}
-html body .walletWrap .walletBox .gradient .content .amount .half .title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  color: #4d4d4d;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-html body .walletWrap .walletBox .gradient .content .amount .half .money {
-  color: #000000;
-  font-size: 25px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  height: 33px;
-  width: 100%;
-}
-html body .walletWrap .walletBox .gradient .content .details {
-  width: 100%;
-  height: auto;
-  display: flex;
-  border-bottom: solid 1px #cccccc;
-}
-html body .walletWrap .walletBox .gradient .content .details .items {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 0 15px;
-  height: 10.67vw;
-}
-html body .walletWrap .walletBox .gradient .content .details .items:nth-of-type(2) {
-  border: none;
-}
-html body .walletWrap .walletBox .gradient .content .details .items p {
-  font-size: 15px;
-  font-weight: bold;
-  color: #4d4d4d;
-  white-space: nowrap;
-}
-html body .walletWrap .walletBox .gradient .content .details .items p:nth-of-type(1) {
-  font-size: 12px;
-  text-align: center;
-}
-html body .walletWrap .walletBox .gradient .content .details .items p:nth-of-type(2) {
-  text-align: right;
-  box-sizing: border-box;
-  padding: 0 10px;
-  color: #e11515;
-}
-html body .walletWrap .walletBox ul {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 12.8vw;
-}
-html body .walletWrap .walletBox ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-html body .walletWrap .walletBox ul li i {
-  display: block;
-  width: 11.47vw;
-  height: 11.47vw;
-}
-html body .walletWrap .walletBox ul li p {
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #4d4d4d;
-  padding-top: 6px;
-}
-html body .walletWrap .walletList {
-  width: 100%;
-  height: auto;
-  background: #ffffff;
-}
-html body .walletWrap .walletList .forPlatform {
-  padding-bottom: 15px;
-  display: none;
-}
-html body .walletWrap .walletList .forPlatform.display {
-  display: block;
-}
-html body .walletWrap .walletList .forPlatform .title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  padding: 8px 15px 0;
-  margin-bottom: 11px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: #848484;
-  font-weight: bold;
-}
-html body .walletWrap .walletList .forPlatform .title button {
-  width: 18.93vw;
-  height: 6.13vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
-  font-size: 4vw;
-  font-weight: bold;
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
   color: #ffffff;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  font-size: 12px;
-}
-html body .walletWrap .walletList .forPlatform .title button:active, html body .walletWrap .walletList .forPlatform .title button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-}
-html body .walletWrap .walletList .forPlatform ul {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  box-sizing: border-box;
-  max-height: 67.16vw;
-  padding: 0 3.6vw;
-  overflow: hidden;
-}
-html body .walletWrap .walletList .forPlatform ul.active {
-  max-height: none;
-}
-html body .walletWrap .walletList .forPlatform ul li {
-  width: 30.66vw;
-  min-height: 16.53vw;
-  box-sizing: border-box;
-  padding: 10px 0 0 11px;
-  margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #cccccc;
-  border-radius: 5px;
-}
-html body .walletWrap .walletList .forPlatform ul li:nth-of-type(3n) {
-  margin-right: 0;
-}
-html body .walletWrap .walletList .forPlatform ul li div {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #4d4d4d;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
-  display: block;
-  width: 18px;
-  height: 18px;
-  margin-left: 5px;
-  position: relative;
-  opacity: 0;
-  pointer-events: none;
-}
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo.display {
-  opacity: 1;
-  pointer-events: visible;
-}
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
-  display: block;
-}
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
-  display: none;
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -30px;
-  background: #cca172;
-  padding: 6px 18px;
-  color: #ffffff;
-  border-radius: 3px;
-  white-space: nowrap;
-}
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -6px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 4px 6px 4px;
-  border-color: #cca172 transparent;
-}
-html body .walletWrap .walletList .forPlatform ul li p {
-  margin-top: 10px;
-  font-size: 17px;
-  color: #000000;
-  font-weight: bold;
-}
-html body .walletWrap .walletList .forPlatform .openBtn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin-top: 15px;
-}
-html body .walletWrap .walletList .forPlatform .openBtn div {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: #4d4d4d;
-  display: flex;
-  align-items: center;
-}
-html body .walletWrap .walletList .forPlatform .openBtn div.active .db_arrow {
-  transform: rotate(180deg);
-}
-html body .walletWrap .walletList .forPlatform .openBtn div .db_arrow {
-  display: block;
-  width: 12px;
-  height: 12px;
-  margin-left: 9px;
-  transition: all 0.5s ease;
 }
 html body .depositWrap {
   width: 100%;
@@ -5069,22 +5474,20 @@ html body .depositWrap .depList .listWrap ul li {
   height: 19.2vw;
   margin-right: 5px;
   background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   border-radius: 5px;
   color: #000000;
   font-weight: bold;
-  flex-direction: column;
   position: relative;
   overflow: hidden;
-}
-html body .depositWrap .depList .listWrap ul li:active, html body .depositWrap .depList .listWrap ul li.active {
-  background: linear-gradient(to top, #ffffff 40%, #f4f4f4 100%);
+  font-size: 12px;
 }
 html body .depositWrap .depList .listWrap ul li.active {
-  border-color: #3d4cce;
+  border-color: #c7a76d;
 }
 html body .depositWrap .depList .listWrap ul li.active::before {
   content: "";
@@ -5092,7 +5495,7 @@ html body .depositWrap .depList .listWrap ul li.active::before {
   right: 0;
   bottom: 0;
   transform: translate(50%, 50%) rotate(45deg);
-  background: #3d4cce;
+  background: #c7a76d;
   width: 8vw;
   height: 8vw;
 }
@@ -5110,9 +5513,6 @@ html body .depositWrap .depList .listWrap ul li i {
   height: 8.27vw;
 }
 html body .depositWrap .depList .listWrap ul li p {
-  color: #000000;
-  font-weight: bold;
-  font-size: 12px;
   margin-top: 6px;
   text-align: center;
 }
@@ -5154,11 +5554,11 @@ html body .depositWrap .depContent select {
   font-size: 15px;
   font-weight: bold;
   color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #3d4cce 0), linear-gradient(135deg, #3d4cce 50%, transparent 0);
+  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   padding-left: 15px;
 }
 html body .depositWrap .depContent .remind {
@@ -5174,7 +5574,7 @@ html body .depositWrap .depContent input {
   width: 100%;
   height: 42px;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -5188,20 +5588,21 @@ html body .depositWrap .depContent input::placeholder {
 html body .depositWrap .depContent .check {
   width: 100%;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   margin-top: 20px;
 }
 html body .depositWrap .depContent .check:active, html body .depositWrap .depContent .check.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .depositWrap .depContent.already .title {
-  color: #3d4cce;
+  color: #9c8018;
 }
 html body .depositWrap .depContent.already ul {
   width: 100%;
@@ -5231,31 +5632,32 @@ html body .depositWrap .depContent.already ul li p button {
 }
 html body .depositWrap .depContent.already ul li p button.copy {
   background: #ffffff;
-  border: solid 1px #cca172;
+  border: solid 1px #a7854d;
   font-size: 13px;
   font-weight: bold;
-  color: #cca172;
+  color: #a7854d;
   border-radius: 3px;
   font-size: 14px;
 }
 html body .depositWrap .depContent.already ul li p button.change {
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 14px;
 }
 html body .depositWrap .depContent.already ul li p button.change:active, html body .depositWrap .depContent.already ul li p button.change.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .depositWrap .depContent.already ul li .checkBox {
   width: 95%;
   height: auto;
-  background: #f7f8ff;
-  border: solid 1px #aeb6fd;
+  background: #fffcf5;
+  border: solid 1px #ffe5cd;
   color: #4d4d4d;
   font-size: 14px;
   display: flex;
@@ -5296,7 +5698,7 @@ html body .depositWrap .remindBox {
   height: auto;
   margin: 0 auto;
   background: #ffffff;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   border-radius: 5px;
   padding: 14px 15px;
   box-sizing: border-box;
@@ -5312,7 +5714,7 @@ html body .depositWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #3d4cce;
+  color: #9c8018;
 }
 html body .depositWrap .remindBox p .sp {
   color: #e11515;
@@ -5335,6 +5737,7 @@ html body .transWrap .wallet {
   box-shadow: 0 0 5px 0 #c8c8c880;
   margin: 0 auto 10px;
   display: flex;
+  border: solid 1px #957222;
 }
 html body .transWrap .wallet .helf {
   width: 100%;
@@ -5349,7 +5752,7 @@ html body .transWrap .wallet .helf .title {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #9c8018;
 }
 html body .transWrap .wallet .helf .title i {
   width: 4.27vw;
@@ -5359,18 +5762,19 @@ html body .transWrap .wallet .helf .title i {
 html body .transWrap .wallet .helf .title button {
   width: 18.93vw;
   height: 6.13vw;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 12px;
   margin-left: 20px;
 }
 html body .transWrap .wallet .helf .title button:active, html body .transWrap .wallet .helf .title button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .transWrap .wallet .helf .amount {
   font-size: 29px;
@@ -5401,17 +5805,17 @@ html body .transWrap .transBox .selectBox select {
   font-size: 15px;
   font-weight: bold;
   color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #3d4cce 0), linear-gradient(135deg, #3d4cce 50%, transparent 0);
+  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   padding-left: 15px;
   padding-left: 12vw;
   font-size: 14px;
 }
 html body .transWrap .transBox .selectBox .smallWord {
-  color: #3d4cce;
+  color: #9c8018;
   font-size: 12px;
   font-weight: bold;
   position: absolute;
@@ -5424,7 +5828,7 @@ html body .transWrap .transBox input {
   height: 42px;
   margin-bottom: 12px;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -5438,16 +5842,17 @@ html body .transWrap .transBox input::placeholder {
 html body .transWrap .transBox .check {
   width: 100%;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .transWrap .transBox .check:active, html body .transWrap .transBox .check.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .transWrap .forPlatform {
   padding-bottom: 15px;
@@ -5524,15 +5929,21 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
   height: auto;
+  background: #cca172;
   padding: 6px 18px;
   color: #ffffff;
-  background: #cca172;
   border-radius: 3px;
+  font-size: 3vw;
+  position: relative;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 18px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -30px;
-  white-space: nowrap;
 }
 html body .transWrap .forPlatform ul li div .smallInfo .inner::before {
   content: "";
@@ -5545,6 +5956,9 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner::before {
   border-style: solid;
   border-width: 0 4px 6px 4px;
   border-color: #cca172 transparent;
+}
+html body .transWrap .forPlatform ul li div .smallInfo .inner em {
+  color: #ffff00;
 }
 html body .transWrap .forPlatform ul li p {
   margin-top: 10px;
@@ -5592,14 +6006,13 @@ html body .withWrap .walletBox {
   background: #ffffff;
 }
 html body .withWrap .walletBox .gradient {
-  background: linear-gradient(to bottom, #3d4cce 0%, #3d4cce 23%, #ffffff 24%, #ffffff 100%);
   width: 100%;
   height: auto;
 }
 html body .withWrap .walletBox .gradient .content {
   width: 92vw;
   height: 80px;
-  margin: 0 auto 16px;
+  margin: 25px auto 16px;
   background: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #c8c8c880;
@@ -5608,9 +6021,10 @@ html body .withWrap .walletBox .gradient .content {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 10px 14px;
+  border: solid 1px #957222;
 }
 html body .withWrap .walletBox .gradient .content .title {
-  color: #4d4d4d;
+  color: #9c8018;
   font-size: 14px;
   font-weight: bold;
   display: flex;
@@ -5647,18 +6061,19 @@ html body .withWrap .walletBox .gradient .detail p {
 html body .withWrap .walletBox .gradient .detail p button {
   width: 70px;
   height: 23px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   margin-top: 8px;
   font-size: 12px;
 }
 html body .withWrap .walletBox .gradient .detail p button:active, html body .withWrap .walletBox .gradient .detail p button.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .withWrap .walletBox .gradient .detail p.num {
   color: #000000;
@@ -5678,16 +6093,17 @@ html body .withWrap .walletBox .walletDetail .check {
   margin: 0 auto;
   width: 92.8vw;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
 }
 html body .withWrap .walletBox .walletDetail .check:active, html body .withWrap .walletBox .walletDetail .check.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .withWrap .walletBox .walletDetail .detailBox {
   padding-bottom: 15px;
@@ -5745,15 +6161,21 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
   display: none;
   width: auto;
   height: auto;
+  background: #cca172;
   padding: 6px 18px;
   color: #ffffff;
-  background: #cca172;
   border-radius: 3px;
+  font-size: 3vw;
+  position: relative;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 18px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -30px;
-  white-space: nowrap;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .inner::before {
   content: "";
@@ -5766,6 +6188,9 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
   border-style: solid;
   border-width: 0 4px 6px 4px;
   border-color: #cca172 transparent;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .inner em {
+  color: #ffff00;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li p {
   margin-top: 10px;
@@ -5809,8 +6234,8 @@ html body .withWrap .withContent .remind {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  background: #f7f8ff;
-  border: solid 1px #aeb6fd;
+  background: #fffcf5;
+  border: solid 1px #ffe5cd;
   color: #4d4d4d;
   font-size: 14px;
   display: flex;
@@ -5844,11 +6269,11 @@ html body .withWrap .withContent select {
   font-size: 15px;
   font-weight: bold;
   color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #3d4cce 0), linear-gradient(135deg, #3d4cce 50%, transparent 0);
+  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   padding-left: 15px;
 }
 html body .withWrap .withContent .smallRemind {
@@ -5862,7 +6287,7 @@ html body .withWrap .withContent input {
   height: 42px;
   margin-top: 25px;
   background: none;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   font-size: 15px;
   color: #000000;
   font-weight: bold;
@@ -5876,24 +6301,25 @@ html body .withWrap .withContent input::placeholder {
 html body .withWrap .withContent .check {
   width: 100%;
   height: 42px;
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(to top, #d8be86 0%, #f0e4ad 92%);
+  border: solid 1px #957222;
   font-size: 4vw;
   font-weight: bold;
-  color: #ffffff;
+  color: #7c5625;
   border-radius: 3px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
 html body .withWrap .withContent .check:active, html body .withWrap .withContent .check.active {
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(to top, #e8cb8e 0, #a17d44 100%);
+  color: #ffffff;
 }
 html body .withWrap .remindBox {
   width: 92.27vw;
   height: auto;
   margin: 10px auto 0;
   background: #ffffff;
-  border: solid 1px #cccccc;
+  border: solid 1px #957222;
   border-radius: 5px;
   padding: 14px 15px;
   box-sizing: border-box;
@@ -5909,7 +6335,7 @@ html body .withWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #3d4cce;
+  color: #9c8018;
 }
 html body .withWrap .remindBox p .sp {
   color: #e11515;
