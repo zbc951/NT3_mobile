@@ -138,11 +138,10 @@ $gameListBtn_ActiveBG: linear-gradient(to top,#e9cc93 0%,#be9c5b 100%);
     border-radius: 5px;
 }
 @mixin gameBoxWord {
-    text-shadow: 2px 3px 3px #332116,
-    2px -2px 3px #332116;
-    color: #ebd495;
+    color: #8e5610;
     font-size: 5vw;
     font-weight: bold;
+    text-align: center;
 }
 
 //member
