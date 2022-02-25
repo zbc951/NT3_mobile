@@ -311,7 +311,7 @@
             width: 100%;
             height: 45vw;
             position: relative;
-            margin-bottom: 2vw;
+            margin-bottom: 8vw;
 
             &:nth-of-type(2n) {
                 margin-right: 0;
@@ -319,8 +319,9 @@
 
             p {
                 position: absolute;
-                bottom: 4vw;
-                left: 7vw;
+                width: 100%;
+                bottom: -6vw;
+                left: 0;
                 @include gameBoxWord;
             }
         }
