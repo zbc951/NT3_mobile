@@ -213,8 +213,9 @@
 
         ol {
             width: auto;
-            height: auto;
+            height: 100%;
             @include gameListBG;
+            overflow-y: auto;
 
             li {
                 display: flex;
@@ -302,6 +303,7 @@
         width: 65vw;
         height: auto;
         display: none;
+        overflow-y: auto;
 
         &.display {
             display: flex;

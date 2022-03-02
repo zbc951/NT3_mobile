@@ -876,11 +876,12 @@ html body .homeCenter .gameList {
 }
 html body .homeCenter .gameList ol {
   width: auto;
-  height: auto;
+  height: 100%;
   background: linear-gradient(to top, #ffffff 36%, #f5f5f5 100%);
   border: solid 1px #b69761;
   box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 #5a5a5a80;
   border-radius: 5px;
+  overflow-y: auto;
 }
 html body .homeCenter .gameList ol li {
   display: flex;
@@ -949,6 +950,7 @@ html body .homeCenter .gameBox {
   width: 65vw;
   height: auto;
   display: none;
+  overflow-y: auto;
 }
 html body .homeCenter .gameBox.display {
   display: flex;
@@ -2151,12 +2153,24 @@ html body .filter .pointWindow .content ul li p {
   width: 50%;
   text-align: center;
 }
-@media only screen and (max-width: 320px) {
-  html body .homeCenter .gameList div {
-    justify-content: center !important;
+@media only screen and (max-width: 414px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 45vh;
   }
-  html body .homeCenter .gameList div i {
-    display: none !important;
+}
+@media only screen and (max-width: 375px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 42vh;
+  }
+}
+@media only screen and (max-width: 360px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 41vh;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 36vh;
   }
   html body .operate .btnBox {
     padding: 0 3% !important;
@@ -2164,6 +2178,21 @@ html body .filter .pointWindow .content ul li p {
   html body .operate .btnBox button {
     width: 36px !important;
     height: 36px !important;
+  }
+}
+@media only screen and (height: 812px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 52vh;
+  }
+}
+@media only screen and (height: 731px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 45vh;
+  }
+}
+@media only screen and (height: 823px) {
+  html body .homeCenter .gameList, html body .homeCenter .gameBox {
+    height: 51vh;
   }
 }
 html body .slotWrap {
